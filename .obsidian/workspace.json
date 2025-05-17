@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ffa64aa8ecc5e0e4",
+        "id": "6b8b3ddb571904f2",
         "type": "tabs",
         "children": [
           {
-            "id": "21783dbeabac31b4",
+            "id": "e7324214969b2a18",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -173,17 +173,16 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false,
-      "remotely-save:Remotely Save": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ab522aaa4e504827",
+  "active": "76cbfe103759ff7d",
   "lastOpenFiles": [
+    "2025-05-17.md",
     "Notion/Class Notes/Linux.md",
     "Notion/Class Notes/A12 Introduction/Questions.md",
     "Excalidraw/Drawing 2025-05-17 14.56.23.excalidraw.md",
     "Excalidraw",
-    "2025-05-17.md",
     "Notion/Class Notes/NodeJS/Deploying Node js microservices/Untitled.png",
     "Notion/Class Notes/DOM/Untitled 1.png",
     "Notion/Class Notes/JavaScript.md",

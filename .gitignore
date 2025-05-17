@@ -1,0 +1,17 @@
+# Ignore only volatile or system-specific files
+.obsidian/cache/
+.obsidian/graph.json
+
+# OS system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+Icon?
+
+# Editor/temporary files
+*.swp
+*.tmp
+*.log
+*.bak
+*.old
