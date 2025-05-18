@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "04085feb2d8778e9",
+        "id": "0c9dcd01eae2ed64",
         "type": "tabs",
         "children": [
           {
-            "id": "ac9bdd1d08a3ae1e",
+            "id": "87193dc869ba0091",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/plugins/obsidian-icon-folder/data.json",
-                "bFile": ".obsidian/plugins/obsidian-icon-folder/data.json",
-                "aRef": ""
+                "file": "Teaching/Web/Front-end/HTML.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: data.json"
+              "icon": "lucide-file",
+              "title": "HTML"
             }
           }
         ]
@@ -178,12 +178,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ac9bdd1d08a3ae1e",
+  "active": "87193dc869ba0091",
   "lastOpenFiles": [
+    "2025-05-17.md",
     "Notion/Class Notes/MongoDB.md",
     "Notion/Class Notes/NestJS.md",
     "Notion/Class Notes/Linux.md",
-    "2025-05-17.md",
     "Notion/Class Notes/A12 Introduction/Questions.md",
     "Excalidraw/Drawing 2025-05-17 14.56.23.excalidraw.md",
     "Excalidraw",
