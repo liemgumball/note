@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0c9dcd01eae2ed64",
+        "id": "a2fbffee1bcd4a5a",
         "type": "tabs",
         "children": [
           {
-            "id": "87193dc869ba0091",
+            "id": "dd06a0112024dccb",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teaching/Web/Front-end/HTML.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "HTML"
+              "title": "New tab"
             }
           }
         ]
@@ -178,9 +174,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "87193dc869ba0091",
+  "active": "dd06a0112024dccb",
   "lastOpenFiles": [
+    "2025-05-19.md",
+    "2025-05-18.md",
     "2025-05-17.md",
+    "Notion/Class Notes/React.md",
+    "Notion/Class Notes/NodeJS/Node js securing.md",
+    "Notion/Class Notes/NodeJS/Express framework.md",
+    "Notion/Class Notes/NodeJS.md",
+    "Notion/Class Notes/JavaScript.md",
+    "Notion/Class Notes/HTML CSS training.md",
+    "Teaching/Web/Front-end/HTML.md",
     "Notion/Class Notes/MongoDB.md",
     "Notion/Class Notes/NestJS.md",
     "Notion/Class Notes/Linux.md",
@@ -189,8 +194,6 @@
     "Excalidraw",
     "Notion/Class Notes/NodeJS/Deploying Node js microservices/Untitled.png",
     "Notion/Class Notes/DOM/Untitled 1.png",
-    "Notion/Class Notes/JavaScript.md",
-    "Notion/Class Notes/React.md",
     "Notion/Note/React developer interview questions.md",
     "Notion/Technical Resource/Open APIs and Data Resource/Open APIs and Data Resource/OMDb API.md",
     "Notion/Technical Resource/Open APIs and Data Resource/Open APIs and Data Resource/Google Books APIs.md",
@@ -202,13 +205,6 @@
     "Notion/Note/CICD.md",
     "Notion/Note/Data structures and Algorithms.md",
     "Notion/Note/Example Brainstorm.md",
-    "Notion/Note/Example PRD.md",
-    "Notion/Note/Example Tech Spec.md",
-    "Notion/Note/Front-end developer interview questions.md",
-    "Notion/Note/Native Deployment with AWS.md",
-    "Notion/Note/New Brainstorm.md",
-    "Notion/Note/New Product Spec (PRD).md",
-    "Notion/Note/New Technical Spec.md",
     "Notion/Class Notes/A12 Introduction/Untitled.png",
     "Notion/Class Notes/More on Typescripts/Screenshot_2024-07-29_at_15.56.20.png",
     "Notion/Class Notes/NodeJS/Untitled 1.png",
