@@ -11,10 +11,14 @@
             "id": "dd06a0112024dccb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "2025-05-27.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2025-05-27"
             }
           }
         ]
@@ -176,6 +180,7 @@
   },
   "active": "dd06a0112024dccb",
   "lastOpenFiles": [
+    "2025-05-27.md",
     "2025-05-19.md",
     "2025-05-18.md",
     "2025-05-17.md",
@@ -204,7 +209,6 @@
     "Notion/Technical Resource/Open APIs and Data Resource.md",
     "Notion/Note/CICD.md",
     "Notion/Note/Data structures and Algorithms.md",
-    "Notion/Note/Example Brainstorm.md",
     "Notion/Class Notes/A12 Introduction/Untitled.png",
     "Notion/Class Notes/More on Typescripts/Screenshot_2024-07-29_at_15.56.20.png",
     "Notion/Class Notes/NodeJS/Untitled 1.png",
