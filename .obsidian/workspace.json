@@ -11,10 +11,14 @@
             "id": "3b84807f1f6c8da1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "conflict-files-obsidian-git"
             }
           }
         ]
@@ -176,8 +180,9 @@
   },
   "active": "3b84807f1f6c8da1",
   "lastOpenFiles": [
-    "2025-06-12.md",
     "2025-05-19.md",
+    "conflict-files-obsidian-git.md",
+    "2025-06-12.md",
     "Untitled.md",
     "2025-05-18.md",
     "2025-05-17.md",
@@ -204,7 +209,6 @@
     "Notion/Technical Resource/New Product Spec (PRD).md",
     "Notion/Technical Resource/New Technical Spec.md",
     "Notion/Technical Resource/Open APIs and Data Resource.md",
-    "Notion/Note/CICD.md",
     "Notion/Class Notes/A12 Introduction/Untitled.png",
     "Notion/Class Notes/More on Typescripts/Screenshot_2024-07-29_at_15.56.20.png",
     "Notion/Class Notes/NodeJS/Untitled 1.png",
