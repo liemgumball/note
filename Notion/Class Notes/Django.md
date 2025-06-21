@@ -1,20 +1,23 @@
-Created: April 1, 2023 6:14 PM
+---
+Created: 2023-04-01T18:14
 Class: Self-Research
 Type: Back-end
-Materials: https://www.w3schools.com/django/, https://youtu.be/i5JykvxUk_A
-Reviewed: Yes
-Edited: July 18, 2024 2:52 PM
-
+Materials:
+  - https://www.w3schools.com/django/
+  - https://youtu.be/i5JykvxUk_A
+Reviewed: true
+Edited: 2024-07-18T14:52
+---
 # Setup file env & work
 
-```bash
+```Shell
 python -m venv env
 source env/bin/activate
 ```
 
 ### Installation
 
-```bash
+```Shell
 
 pip install -r requirements
 
@@ -26,29 +29,28 @@ pip install django-filter  # Filtering support
 
 To update `requirements.txt`
 
-```bash
+```Shell
 pip freeze > requirements.txt
 ```
 
 Run to create a project
 
-```bash
+```Shell
 django-admin startproject 'project-name'
 ```
 
 Create app
 
-```bash
+```Shell
 cd 'project-name' && python manage.py startapp 'app-name'
 ```
 
 Create view and database by coding
 
 > In Django, data is created in objects, called Models, and is actually tables in a database.
-> 
 
-```python
-#in app/models.py
+```Python
+\#in app/models.py
 from django.db import models
 
 class Member(models.Model):
@@ -58,17 +60,17 @@ class Member(models.Model):
 
 Run this to create database
 
-```bash
+```Shell
 python manage.py makemigrations 'app-name'
 python manage.py migrate
-#run shell to see data record
+\#run shell to see data record
 python manage.py shell
 >>>.....
 ```
 
 Also can modifier add Fields in the Model
 
-```python
+```Python
 from django.db import models
 
 class Member(models.Model):
@@ -80,7 +82,7 @@ class Member(models.Model):
 
 We can display all data by using View and Prepare Templates or using Admin User of Django
 
-```bash
+```Shell
 python manage.py createsuperuser
 ```
 
@@ -93,7 +95,6 @@ import ‘rest_framework’ into INSTALLED_APPS in file setting.py
 Create a `serializers.py` file to make an API
 
 > Use ‘from rest_framework import Response’ so we can get correctly (between Json or HTML)
-> 
 
 Use @api_view to define what kind of API we want (GET, POST, PUT, DELETE)
 
@@ -101,7 +102,7 @@ Use @api_view to define what kind of API we want (GET, POST, PUT, DELETE)
 
 - Pip install request in Python and write code to test API
 
-```python
+```Python
 import request
 response = request.get('http://127.0.0.1:8000/testing')
 print(response)
@@ -113,6 +114,6 @@ print(response)
 
 - View the page of all of the APIs
 
-```bash
+```Shell
 pip install drf-yasg
 ```

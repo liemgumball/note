@@ -1,10 +1,18 @@
+  
+
 Along with traditional OO hierarchies, another popular way of building up classes from reusable components is to build them by combining simpler partial classes.
+
+  
 
 We can read more about how this pattern works in JavaScript here
 
-["Real" Mixins with JavaScript Classes](https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/)
+> [!info] "Real" Mixins with JavaScript Classes  
+> How to build a simple, powerful, real mixin system for JavaScript and ES6 classes.  
+> [https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/](https://justinfagnani.com/2015/12/21/real-mixins-with-javascript-classes/)  
 
-```tsx
+  
+
+```TypeScript
 class Sprite {
   name = "";
   x = 0;

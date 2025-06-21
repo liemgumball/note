@@ -1,22 +1,18 @@
-
-
-> ***NoSQL** database that focuses on high performance and availability.*
-> 
+> ==**_NoSQL_**== _database that focuses on high performance and availability._
 
 ## Target
 
-- Connecting and persisting to **MongoDB**
+- Connecting and persisting to ==**MongoDB**==
 
 ---
 
-<aside>
-💡 [MongoDB](../MongoDB%20aaf063179c2744b0a6ddfeccc967b3cf.md) is a popular **NoSQL** database which provide a **SQL**-like syntax.
+> [!important]
+> 
+> [[MongoDB]] is a popular ==**NoSQL**== database which provide a ==**SQL**==-like syntax.
 
-</aside>
+## Connecting and persisting to ==MongoDB==
 
-## Connecting and persisting to MongoDB
-
-```jsx
+```JavaScript
 const { MongoClient } = require('mongodb')
 
 const task = process.argv[2]
@@ -46,22 +42,21 @@ main()
 	.finally(() => client.close())
 ```
 
-We imports the `MongoClient` class from the `mongodb` module. This class represents and exposes methods to create a client `connection` to a **MongoDB** database.
+We imports the `MongoClient` class from the `mongodb` module. This class represents and exposes methods to create a client `connection` to a ==**MongoDB**== database.
 
-<aside>
-💡 **MongoDB** sets the last document to `null` by default, to note that it is the end of the collection.
-
-</aside>
+> [!important] ==**MongoDB**==
+> 
+> sets the ==last== document to `null` by default, to note that it is the end of the collection.
 
 ---
 
-If we want to add schemas to your **MongoDB** data to enable you to model your application data. An `npm` module named `mongoose` provides object modeling for **MongoDB**. Let's take a look at how we can model an application using `mongoose`.
+If we want to add schemas to your ==**MongoDB**== data to enable you to model your application data. An `npm` module named `mongoose` provides object modeling for ==**MongoDB**==. Let's take a look at how we can model an application using `mongoose`.
 
-### Mongoose
+### ==Mongoose==
 
-**Mongoose** is an object data modeling library that enables you to apply schemas to  **MongoDB** data with [NodeJS](NodeJS.md) . It saves us from having to manually validate your document objects
+**==Mongoose==** is an ==object data modeling== library that enables you to apply schemas to ==**MongoDB**== data with [[NodeJS]] . It saves us from having to manually validate your document objects
 
-```jsx
+```JavaScript
 const mongoose = require('mongoose')
 
 const URL = 'mongodb://localhost:27017/customers'

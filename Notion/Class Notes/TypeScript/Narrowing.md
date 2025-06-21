@@ -1,6 +1,6 @@
 ## Take this example
 
-```tsx
+```TypeScript
 function padLeft(padding: number | string, input: string) {
   return " ".repeat(padding) + input;
 // Argument of type 'string | number' is not assignable to parameter of type 'number'.
@@ -10,9 +10,11 @@ function padLeft(padding: number | string, input: string) {
 
 If `padding` is a `number`, it will treat that as the number of spaces we want to prepend to `input`. If `padding` is a `string`, it should just prepend `padding` to `input`
 
-TypeScript is warning us that we’re passing a value with type `number | string` to the `repeat` function, which only accepts a `number`
+  
 
-```tsx
+==TypeScript== is warning us that we’re passing a value with type `number | string` to the `repeat` function, which only accepts a `number`
+
+```TypeScript
 function padLeft(padding: number | string, input: string) {
   if (typeof padding === "number") {
     return " ".repeat(padding) + input;
@@ -20,6 +22,8 @@ function padLeft(padding: number | string, input: string) {
   return padding + input;
 }
 ```
+
+  
 
 ## `typeof` type guards
 
@@ -34,11 +38,13 @@ As we’ve seen, JavaScript supports a `typeof` operator which can give very b
 - `"object"`
 - `"function"`
 
+  
+
 ## **Truthiness narrowing**
 
-In JavaScript, we can use any expression in conditionals, `&&`, `||`, `if` statements, Boolean negations (`!`), and more.
+In ==JavaScript==, we can use any expression in conditionals, `&&`, `||`, `if` statements, Boolean negations (`!`), and more.
 
-```tsx
+```TypeScript
 function getUsersOnlineMessage(numUsersOnline: number) {
   if (numUsersOnline) {
     return `There are ${numUsersOnline} online now!`;
@@ -49,7 +55,9 @@ function getUsersOnlineMessage(numUsersOnline: number) {
 
 In example, `if` statements don’t expect their condition to always have the type `boolean`.
 
-In JavaScript, constructs like `if` first “coerce” their conditions to `boolean`s to make sense of them, and then choose their branches depending on whether the result is `true` or `false`
+  
+
+In ==JavaScript==, constructs like `if` first “coerce” their conditions to `boolean`s to make sense of them, and then choose their branches depending on whether the result is `true` or `false`
 
 - `0`
 - `NaN`
@@ -60,7 +68,9 @@ In JavaScript, constructs like `if` first “coerce” their conditions to `b
 
 all coerce to `false`, and other values get coerced to `true`
 
-```tsx
+  
+
+```TypeScript
 function printAll(strs: string | string[] | null) {
   if (strs && typeof strs === "object") {
     for (const s of strs) {
@@ -72,17 +82,23 @@ function printAll(strs: string | string[] | null) {
 }
 ```
 
-We wrapped the entire body of the function in a truthy check, but this has a subtle downside: we may no longer be handling the empty string case correctly.
+We wrapped the entire body of the function in a truthy check, but this has a subtle downside: we may no longer be handling the ==empty string== case correctly.
+
+  
 
 ## **Equality narrowing**
 
 TypeScript also uses `switch` statements and equality checks like `===`, `!==`, `==`, and `!=` to narrow types.
 
+  
+
 JavaScript’s looser equality checks with `==` and `!=` also get narrowed correctly. Checking whether something `== null` actually not only checks whether it is specifically the value `null` - it also checks whether it’s potentially `undefined`
+
+  
 
 Example:
 
-```tsx
+```TypeScript
 function multiplyValue(value: number | null | undefined, factor: number) {
   // Remove both 'null' from the type.
   if (value !== null) {
@@ -94,7 +110,7 @@ function multiplyValue(value: number | null | undefined, factor: number) {
 
 and
 
-```tsx
+```TypeScript
 function multiplyValue(value: number | null | undefined, factor: number) {
   // Remove both 'null' and 'undefined' from the type.
   if (value != null) {
@@ -103,9 +119,11 @@ function multiplyValue(value: number | null | undefined, factor: number) {
 }
 ```
 
+  
+
 ## The `in` operator narrowing
 
-```tsx
+```TypeScript
 type Fish = { swim: () => void };
 type Bird = { fly: () => void };
 type Human = { swim?: () => void; fly?: () => void };
@@ -120,9 +138,11 @@ function move(animal: Fish | Bird | Human) {
 }
 ```
 
+  
+
 ## `instanceof` narrowing
 
-```tsx
+```TypeScript
 function logValue(x: Date | string) {
   if (x instanceof Date) {
     console.log(x.toUTCString());
@@ -133,9 +153,11 @@ function logValue(x: Date | string) {
   }
 ```
 
-## **Nullish Coalescing with `??`**
+  
 
-```tsx
+## **Nullish Coalescing with** `**??**`
+
+```TypeScript
 let value = getValue() ?? "Default";
 
 # equal to
@@ -143,11 +165,13 @@ let value = getValue()
 if(!value) value = "Default";
 ```
 
-## **Using type predicates**
+  
 
-To define a user-defined type guard, we simply need to define a function whose return type is a *type predicate*
+## **Using type** ==**predicates**==
 
-```tsx
+To define a user-defined type guard, we simply need to define a function whose return type is a _type predicate_
+
+```TypeScript
 
 type Fish = { swim: () => void };
 type Bird = { fly: () => void };
@@ -167,19 +191,25 @@ if (isFish(pet)) {
 
 `pet is Fish` is our type predicate in this example. A predicate takes the form `parameterName is Type`, where `parameterName` must be the name of a parameter from the current function signature.
 
-Any time `isFish` is called with some variable, TypeScript will *narrow* that variable to that specific type if the original type is compatible.
+Any time `isFish` is called with some variable, TypeScript will _narrow_ that variable to that specific type if the original type is compatible.
 
 In addition, classes can use `this is Type` to narrow their type.
 
-[Documentation - Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html#this-based-type-guards)
+> [!info] Documentation - Classes  
+> How classes work in TypeScript  
+> [https://www.typescriptlang.org/docs/handbook/2/classes.html#this-based-type-guards](https://www.typescriptlang.org/docs/handbook/2/classes.html#this-based-type-guards)  
+
+  
 
 ## **Assertion functions**
 
-Types can also be narrowed using **Assertion functions**
+Types can also be narrowed using **==Assertion functions==**
 
-[Documentation - TypeScript 3.7](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html#assertion-functions)
+> [!info] Documentation - TypeScript 3.7  
+> TypeScript 3.  
+> [https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html#assertion-functions](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-7.html#assertion-functions)  
 
-```tsx
+```TypeScript
 function multiply(x, y) {
   assert(typeof x === "number");
   assert(typeof y === "number");
@@ -187,11 +217,13 @@ function multiply(x, y) {
 }
 ```
 
+  
+
 ## **Discriminated unions**
 
 Most of the examples we’ve looked at so far have focused around narrowing single variables with simple types like `string`, `boolean`, and `number`. While this is common, most of the time in JavaScript we’ll be dealing with slightly more complex structures
 
-```tsx
+```TypeScript
 interface Shape {
   kind: "circle" | "square";
   radius?: number;
@@ -199,18 +231,22 @@ interface Shape {
 }
 ```
 
+  
+
 We can write a `getArea` function that applies the right logic based on if it’s dealing with a circle or square. We’ll first try dealing with circles.
 
-```tsx
+```TypeScript
 function getArea(shape: Shape) {
   return Math.PI * shape.radius ** 2;
 // 'shape.radius' is possibly 'undefined'.
 }
 ```
 
+  
+
 The JavaScript still doesn’t work even we perform the appropriate checks on the `kind` property
 
-```tsx
+```TypeScript
 function getArea(shape: Shape) {
   if (shape.kind === "circle") {
     return Math.PI * shape.radius ** 2;
@@ -219,9 +255,11 @@ function getArea(shape: Shape) {
 }
 ```
 
-We’ve hit a point where we know more about our values than the type checker does. We could try to use a non-null assertion (a `!` after `shape.radius`) to say that `radius` is **definitely** present.
+  
 
-```tsx
+We’ve hit a point where we know more about our values than the type checker does. We could try to use a non-null assertion (a `!` after `shape.radius`) to say that `radius` is **==definitely==** present.
+
+```TypeScript
 function getArea(shape: Shape) {
   if (shape.kind === "circle") {
     return Math.PI * shape.radius! ** 2;
@@ -229,14 +267,17 @@ function getArea(shape: Shape) {
 }
 ```
 
-<aside>
-💡 The problem with this encoding of `Shape` is that the type-checker doesn’t have any way to know whether or not `radius` or `sideLength` are present based on the `kind` property.
+  
 
-</aside>
+> [!important] The problem with this encoding of 
+> 
+> `Shape` is that the type-checker doesn’t have any way to know whether or not `radius` or `sideLength` are present based on the `kind` property.
+
+  
 
 We should write like this:
 
-```tsx
+```TypeScript
 interface Circle {
   kind: "circle";
   radius: number;
@@ -250,15 +291,17 @@ interface Square {
 type Shape = Circle | Square;
 ```
 
+  
+
 ## The `never` type
 
-When narrowing, you can reduce the options of a union to a point where you have removed all possibilities and have nothing left. In those cases, **TypeScript** will use a `never` type to represent a state which shouldn’t exist.
+When narrowing, you can reduce the options of a union to a point where you have removed all possibilities and have nothing left. In those cases, ==**TypeScript**== will use a `never` type to represent a state which ==shouldn’t exist==.
 
 ### **Exhaustiveness checking**
 
 The `never` type is assignable to every type; however, no type is assignable to `never` (except `never` itself). This means you can use narrowing and rely on `never` turning up to do exhaustive checking in a `switch` statement.
 
-```tsx
+```TypeScript
 type Shape = Circle | Square;
  
 function getArea(shape: Shape) {
@@ -274,9 +317,11 @@ function getArea(shape: Shape) {
 }
 ```
 
+  
+
 Adding a new member to the `Shape` union, will cause a TypeScript error:
 
-```tsx
+```TypeScript
 interface Triangle {
   kind: "triangle";
   sideLength: number;

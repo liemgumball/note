@@ -1,6 +1,6 @@
-[EBook - Basic design and build a website](https://drive.google.com/file/d/1qTnNfR-Li8_hO6_bsb0L9c7S59eJykim/view?usp=sharing)
-
-
+---
+book: https://drive.google.com/file/d/1qTnNfR-Li8_hO6_bsb0L9c7S59eJykim/view?usp=sharing
+---
 ## 📄 HTML Basics – Questions
 
 ### Structure & Syntax
@@ -26,7 +26,7 @@
     
 9. What is the purpose of the `<title>` tag?
     
-10. How do you add an image to a webpage?
+10. How do you add an image to a web page?
     
 11. How do you create a hyperlink in HTML?
     

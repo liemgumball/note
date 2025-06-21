@@ -1,2 +1,1 @@
-
-**Redis** is an open source in-memory key-value data store. Used in the correct setting, **Redis** can be a fast-performing data store. It is often used to provide caching in applications, but can also be used as a database.
+==**Redis**== is an open source i==n-memory key-value data store==. Used in the correct setting, ==**Redis**== can be a ==fast-performing data store==. It is often used to provide ==caching== in applications, but can also be used as a database.

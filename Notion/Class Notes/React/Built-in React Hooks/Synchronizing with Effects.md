@@ -1,29 +1,30 @@
-
 Some components need to synchronize with external systems.
 
-*Effects* let you run some code after rendering so that you can synchronize your component with some system outside of **React**.
+==_Effects_== let you run some code after rendering so that you can synchronize your component with some system outside of **==React==**.
 
-[useEffect – React](https://react.dev/reference/react/useEffect)
+> [!info] useEffect – React  
+> The library for web and native user interfaces  
+> [https://react.dev/reference/react/useEffect](https://react.dev/reference/react/useEffect)  
 
-```jsx
+```JavaScript
 import {useEffect} from 'react';
 
 useEffect(() => { console.log('use effect ran'); }) // run everytime component re-render
 ```
 
-<aside>
-📌 **We might not need an Effect**
+  
 
-</aside>
+> [!important] **We might not need an Effect**
 
-**Don’t rush to add Effects to your components.** Keep in mind that Effects are typically used to “step out” of your React code and synchronize with some *external* system.
+**Don’t rush to add Effects to your components.** Keep in mind that Effects are typically used to “step out” of your React code and synchronize with some _external_ system.
 
-<aside>
-💡 Wrapping the **DOM** update in an Effect, you let React update the screen first. Then your Effect runs.
+  
 
-</aside>
+> [!important] Wrapping the
+> 
+> ==**DOM**== update in an Effect, you let React ==update the screen first==. Then your Effect runs.
 
-Most of the case the `useEffect` is used to work with **DOM**, move an effect out of the rendering calculation
+Most of the case the `useEffect` is used to work with ==**DOM**==, move an effect ==out of the rendering== calculation
 
 ### Usage
 
@@ -38,20 +39,25 @@ Most of the case the `useEffect` is used to work with **DOM**, move an effect ou
 9. Reading the latest props and state from an Effect
 10. Displaying different content on the server and the client
 
-<aside>
-<img src="https://www.notion.so/icons/drafts_green.svg" alt="https://www.notion.so/icons/drafts_green.svg" width="40px" /> An `Effect` lets you ***keep your component synchronized*** with some external system (like a chat service). Here, *external system* means any piece of code that’s **not controlled by React**, such as:
+  
 
-- Browser **DOM**
-- A timer managed with `setInterval()` and `clearInterval()`.
-- An event subscription using `window.addEventListener()` and `window.removeEventListener()`
-- A third-party animation library with an API like `animation.start()` and `animation.reset()`
-</aside>
+> [!important] An
+> 
+> `Effect` lets you ==_**keep your component synchronized**_== with some external system (like a chat service). Here, ==_external system_== means any piece of code that’s **==not controlled by React==**, such as:
+> 
+> - Browser ==**DOM**==
+> - A timer managed with `setInterval()` and `clearInterval()`.
+> - An event subscription using `window.addEventListener()` and `window.removeEventListener()`
+> - A third-party animation library with an API like `animation.start()` and `animation.reset()`
 
-<aside>
-<img src="https://www.notion.so/icons/checkmark_green.svg" alt="https://www.notion.so/icons/checkmark_green.svg" width="40px" /> The `useEffect` is a very important Hook in **React**
+  
 
-</aside>
+> [!important] The
+> 
+> `useEffect` is a very important Hook in ==**React**==
 
 We can take a look of these example with `useEffect`
 
-[useEffect – React](https://react.dev/reference/react/useEffect#examples-connecting)
+> [!info] useEffect – React  
+> The library for web and native user interfaces  
+> [https://react.dev/reference/react/useEffect#examples-connecting](https://react.dev/reference/react/useEffect#examples-connecting)

@@ -1,14 +1,17 @@
-Created: October 10, 2023 9:22 AM
+---
+Created: 2023-10-10T09:22
 Class: Agility IO InternShip
 Type: Front-end
-Materials: https://legacy.reactjs.org/docs/accessibility.html#:~:text=MAIN%20CONCEPTS-,ADVANCED%20GUIDES,-Accessibility, https://tanstack.com/query/v3/, https://reactjs.org/docs/testing.html
-Reviewed: Yes
-Edited: May 10, 2025 2:46 PM
-
-<aside>
-💡 In this note, we’ll go through the *Advanced guides* in **React**
-
-</aside>
+Materials:
+  - https://legacy.reactjs.org/docs/accessibility.html#:~:text=MAIN%20CONCEPTS-,ADVANCED%20GUIDES,-Accessibility
+  - https://tanstack.com/query/v3/
+  - https://reactjs.org/docs/testing.html
+Reviewed: true
+Edited: 2025-05-10T14:46
+---
+> [!important] In this note, we’ll go through the
+> 
+> _Advanced guides_ in ==**React**==
 
 ## Accessibility
 
@@ -16,22 +19,25 @@ Web accessibility is the design and creation of websites that can be used by eve
 
 ### Standards and Guidelines
 
-[WCAG 2 Overview](https://www.w3.org/WAI/intro/wcag)
+> [!info] WCAG 2 Overview  
+> Introduces the Web Content Accessibility Guidelines (WCAG) international standard, including WCAG 2.  
+> [https://www.w3.org/WAI/intro/wcag](https://www.w3.org/WAI/intro/wcag)  
 
-[](https://www.w3.org/WAI/intro/aria)
+> [!info]  
+>  
+> [https://www.w3.org/WAI/intro/aria](https://www.w3.org/WAI/intro/aria)  
 
 ### Semantic HTML
 
-<aside>
-<img src="https://www.notion.so/icons/pencil_orange.svg" alt="https://www.notion.so/icons/pencil_orange.svg" width="40px" /> Semantic **HTML** is the foundation of accessibility in a web application. Using the various HTML elements to r*einforce the meaning of information* in our websites will often give us accessibility for free.
-
-</aside>
+> [!important] Semantic
+> 
+> ==**HTML**== is the foundation of ==accessibility== in a web application. Using the various HTML elements to r==_einforce the meaning of information_== in our websites will often give us accessibility for free.
 
 Sometimes we break HTML semantics when we add `<div>` elements to our JSX to make our React code work
 
-In these cases we should rather use **React Fragments** to group together multiple elements.
+In these cases we should rather use ==**React Fragments**== to group together multiple elements.
 
-```tsx
+```TypeScript
 return (
     <Fragment>
       <dt>{item.term}</dt>
@@ -64,40 +70,42 @@ return (
 - **Focus Control**
 - **Mouse and pointer events**
 - **Setting the language**
-- **Setting the document title `<title>`**
+- **Setting the document title** `**<title>**`
 - **The keyboard**
 
 ---
 
 ## Code-Splitting
 
-<aside>
-📌 Most **React** apps will have their files “bundled” using tools like [**Webpack](https://webpack.js.org/) 
-*Bundling*** is the process of following imported files and merging them into a single file
+> [!important] Most
+> 
+> **==React==** apps will have their files “bundled” using tools like ==**[Webpack](https://webpack.js.org/)**====  
+>   
+> ==_**==Bundling==**_ ==is the process of following imported files and merging them into a single file==
 
-</aside>
-
-[Code Splitting | webpack](https://webpack.js.org/guides/code-splitting/)
+> [!info] Code Splitting | webpack  
+> webpack is a module bundler.  
+> [https://webpack.js.org/guides/code-splitting/](https://webpack.js.org/guides/code-splitting/)  
 
 ### **Code-Splitting** is a feature supported by bundlers
 
-Which can create multiple bundles that can be *dynamically loaded at runtime*.
+Which can create multiple bundles that can be ==_dynamically loaded at runtime_==.
 
-It can help *“lazy-load”* just the things that are currently needed by the user, which can dramatically improve the performance of the app.
+It can help ==_“lazy-load”_== just the things that are currently needed by the user, which can dramatically improve the performance of the app.
 
 ### Dynamic `import()`
 
-```jsx
+```JavaScript
 import("./math").then(math => {
   console.log(math.add(16, 26));
 });
 ```
 
-### **`React.lazy`**
+### `**React.lazy**`
 
 Function lets you render a dynamic import as a regular component.
 
-```jsx
+```JavaScript
 import React, { Suspense } from 'react';
 
 const OtherComponent = React.lazy(() => import('./OtherComponent'));
@@ -119,16 +127,19 @@ function MyComponent() {
 
 `React.lazy` takes a function that must call a dynamic `import()`. This must return a `Promise` which resolves to a module with a `default` export containing a React component.
 
-<aside>
-<img src="https://www.notion.so/icons/cloud-yes_blue.svg" alt="https://www.notion.so/icons/cloud-yes_blue.svg" width="40px" /> The lazy component should then be rendered inside a `Suspense` component, which allows us to show some **fallback** content
+> [!important] The lazy component should then be rendered inside a 
+> 
+> `Suspense` component, which allows us to show some ==**fallback**== content
 
-</aside>
+> [!info] lazy – React  
+> The library for web and native user interfaces  
+> [https://react.dev/reference/react/lazy#suspense-for-code-splitting](https://react.dev/reference/react/lazy#suspense-for-code-splitting)  
 
-[lazy – React](https://react.dev/reference/react/lazy#suspense-for-code-splitting)
+  
 
-In particular, it is sometimes better to show the “old” **UI** while the new **UI** is being prepared. We can use the new [`startTransition`](Built-in%20React%20Hooks.md) API to make React do this
+In particular, it is sometimes better to show the “old” ==**UI**== while the new ==**UI**== is being prepared. We can use the new [[Built-in React Hooks]] API to make React do this
 
-```jsx
+```JavaScript
 import React, { Suspense } from 'react';
 import Tabs from './Tabs';
 import Glimmer from './Glimmer';
@@ -156,11 +167,13 @@ function handleTabSelect(tab) {
 }
 ```
 
+  
+
 ### Error boundaries
 
-If the other module fails to load (for example, due to network failure), it will trigger an error.
+If the other ==module fails to load== (for example, due to network failure), it will trigger an error.
 
-```jsx
+```JavaScript
 import React, { Suspense } from 'react';
 import MyErrorBoundary from './MyErrorBoundary';
 
@@ -183,7 +196,7 @@ const MyComponent = () => (
 
 ### **Route-based code splitting**
 
-```jsx
+```JavaScript
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -206,42 +219,53 @@ const App = () => (
 
 ## Error Boundaries
 
-Error boundaries are **React components** that ***catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI*** instead of the component tree that crashed. Error boundaries catch errors during rendering, in lifecycle methods, and in constructors of the whole tree below them
+Error boundaries are ==**React components**== that ==_**catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI**_== instead of the component tree that crashed. Error boundaries catch errors during ==rendering==, in ==lifecycle methods==, and in ==constructors of the whole tree below them==
 
-[Component – React](https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary)
+> [!info] Component – React  
+> The library for web and native user interfaces  
+> [https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary](https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary)  
 
-<aside>
-💡 **Error Boundaries** works based on a lifecycles method `componentDidCatch()`
+  
 
-</aside>
+> [!important] ==**Error Boundaries**==
+> 
+> works based on a lifecycles method `componentDidCatch()`
 
-<aside>
-📌 There are **no** Hook equivalents to the uncommon  `getSnapshotBeforeUpdate`, `getDerivedStateFromError` and `componentDidCatch`lifecycles yet, but **React** plan to add them soon.****
+> [!important] There are
+> 
+> ==**no**== Hook equivalents to the uncommon  `getSnapshotBeforeUpdate`, `getDerivedStateFromError` and `componentDidCatch`lifecycles yet, but ==**React**== plan to add them soon.
 
-</aside>
+  
 
 ---
 
 ## High-Order Components (HOCs)
 
-[Higher-Order Components – React](https://legacy.reactjs.org/docs/higher-order-components.html)
+> [!info] Higher-Order Components – React  
+> A JavaScript library for building user interfaces  
+> [https://legacy.reactjs.org/docs/higher-order-components.html](https://legacy.reactjs.org/docs/higher-order-components.html)  
 
-**HOC** is just a pattern (input: Component & output: anotherComponent), the principals of **HOC** hide a compose of props in a *blackbox* and reuse it.
+  
 
-<aside>
-💡 **HOC** can be replace logistically by CustomHooks. However it’s depend on developers
+**==HOC==** ==is just a pattern== (input: Component & output: anotherComponent), the principals of **==HOC==** hide a compose of props in a _blackbox_ and reuse it.
 
-</aside>
+> [!important] ==**HOC**==
+> 
+> can be replace logistically by ==CustomHooks==. However it’s depend on developers
+
+  
 
 ---
 
 ## Performance optimization
 
-**React** normally re-renders a component whenever its parent re-renders.
+==**React**== normally re-renders a component whenever its parent re-renders.
 
-With `memo`, we can create a component that **React** will not re-render when its parent re-renders so long as its new props are the same as the old props
+  
 
-```jsx
+With `memo`, we can create a component that ==**React**== will ==not re-render== when its parent re-renders so long as its new props are the same as the old props
+
+```JavaScript
 import { memo, useState } from 'react';
 
 export default function MyApp() {
@@ -268,20 +292,27 @@ const Greeting = memo(function Greeting({ name }) {
 });
 ```
 
-<aside>
-<img src="https://www.notion.so/icons/compose_green.svg" alt="https://www.notion.so/icons/compose_green.svg" width="40px" /> **Only rely on `memo` as a performance optimization**
+  
 
-Optimizing with `memo`  is only valuable when your component re-renders often with the same exact props, and its re-rendering logic is expensive.
-
-If there is no perceptible lag when your component re-renders, `memo` is unnecessary.
-
-</aside>
+> [!important] **Only rely on**
+> 
+> `**memo**` **as a** ==**performance optimization**  
+>   
+>   
+> ==Optimizing with `memo` is only valuable when your component re-renders often with the same exact props, and its re-rendering logic is expensive.  
+>   
+> If there is no perceptible lag when your component re-renders,  
+> `memo` is ==unnecessary==.
 
 ### `<Profiler>`
 
 `<Profiler>` lets us measure rendering performance of a React tree programmatically.
 
-[Profiler – React](https://react.dev/reference/react/Profiler)
+> [!info] Profiler – React  
+> The library for web and native user interfaces  
+> [https://react.dev/reference/react/Profiler](https://react.dev/reference/react/Profiler)  
+
+  
 
 ---
 
@@ -289,11 +320,15 @@ If there is no perceptible lag when your component re-renders, `memo` is unneces
 
 ### Common components
 
-[Common components (e.g. div) – React](https://react.dev/reference/react-dom/components/common)
+> [!info] Common components (e.g. div) – React  
+> The library for web and native user interfaces  
+> [https://react.dev/reference/react-dom/components/common](https://react.dev/reference/react-dom/components/common)  
 
 ### **Form components**
 
-[React DOM Components – React](https://react.dev/reference/react-dom/components)
+> [!info] React DOM Components – React  
+> The library for web and native user interfaces  
+> [https://react.dev/reference/react-dom/components](https://react.dev/reference/react-dom/components)  
 
 - `<input>`
 - `<option>`
@@ -301,48 +336,62 @@ If there is no perceptible lag when your component re-renders, `memo` is unneces
 - `<select>`
 - `<textarea>`
 
+  
+
 ---
 
 ## Testing
 
-There are 2 main ways to test **React** components
+There are 2 main ways to test ==**React**== components
 
-- **Rendering component trees:** a simplified test environment and asserting on their output
-- **Running a complete app:** a realistic environment (aka *end-to-end* test)
+- ==**Rendering component trees:**== a simplified test environment and asserting on their output
+- **==Running a complete app:==** a realistic environment (aka _end-to-end_ test)
 
 ### Recommended Tools
 
 - Jest
     
-    [Jest](https://jestjs.io/)
+    > [!info] Jest  
+    > Jest is a delightful JavaScript Testing Framework with a focus on simplicity.  
+    > [https://jestjs.io/](https://jestjs.io/)  
     
 - React Testing Library
     
-    [React Testing Library | Testing Library](https://testing-library.com/react)
+    > [!info] React Testing Library | Testing Library  
+    > React Testing Library builds on top of DOM Testing Library by adding  
+    > [https://testing-library.com/react](https://testing-library.com/react)  
     
 
-<aside>
-<img src="https://www.notion.so/icons/flash_green.svg" alt="https://www.notion.so/icons/flash_green.svg" width="40px" /> There is an easy way to setup testing environment for **React**.
-It’s **`Vitest`**
+  
 
-</aside>
+> [!important] There is an easy way to setup testing environment for
+> 
+> ==**React**==.  
+> It’s  
+> `==**Vitest**==`
 
-[Vitest](https://vitest.dev/)
+  
 
-```bash
+> [!info] Vitest  
+> Next generation testing framework powered by Vite  
+> [https://vitest.dev/](https://vitest.dev/)  
+
+```Bash
 pnpm install -D vitest@latest
 ```
 
+  
+
 After install `vitest`, we need to setup the configuration for it.
 
-```json
+```JSON
 "compilerOptions" : {
 	...,
 	"types": ["vitest/globals"],
 }
 ```
 
-```tsx
+```TypeScript
 /// <reference types="vitest" />
 /// <reference types="vite/client" />
 
@@ -361,6 +410,6 @@ export default defineConfig({
 })
 ```
 
-```tsx
+```TypeScript
 import '@testing-library/jest-dom'
 ```

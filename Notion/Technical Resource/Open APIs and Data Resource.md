@@ -1,10 +1,27 @@
-
+---
 Created by: liemgumball
-Created time: August 7, 2024 5:48 PM
-Tags: API, Data
+Created time: 2024-08-07T17:48
+tags:
+  - API
+  - Data
+---
+#### Open APIs and Data Resource
 
-[Open APIs and Data Resource](Open%20APIs%20and%20Data%20Resource%209741d3060212429c9e5b66526582f496.csv)
+|Name|Created|Description|![](https://www.notion.so/icons/link_gray.svg)Link|Tags|
+|---|---|---|---|---|
+|[[OMDb API]]|August 7, 2024 5:50 PM|A RESTful web service to obtain movie information|[OMDb API - The Open Movie Database](https://www.omdbapi.com/)|Movie|
+|[[Google Books APIs]]|August 7, 2024 6:06 PM|Google Books API can help application perform full-text searches and retrieve book information, viewability and eBook availability|[Google Books APIs  \|  Google for Developers](https://developers.google.com/books)|Book|
+
+  
+  
 
 ---
 
-[Untitled](Untitled%2041c51b6bb0d74be8859dd2e98d3859ac.csv)
+  
+
+#### Open APIs and Data Resource
+
+|Name|Description|![](https://www.notion.so/icons/link_gray.svg)Link|Tags|
+|---|---|---|---|
+|[[OMDb API]]|A RESTful web service to obtain movie information|[OMDb API - The Open Movie Database](https://www.omdbapi.com/)|Movie|
+|[[Google Books APIs]]|Google Books API can help application perform full-text searches and retrieve book information, viewability and eBook availability|[Google Books APIs  \|  Google for Developers](https://developers.google.com/books)|Book|

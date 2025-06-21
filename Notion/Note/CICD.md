@@ -1,12 +1,12 @@
-
+---
 Created by: liemgumball
-Created time: August 4, 2024 5:42 PM
-
+Created time: 2024-08-04T17:42
+---
 # Dockerfile
 
 1. Sử dụng node version 18
 2. working directory bên trong image
-3. copy các file package.json và package.lock.jsọn vào working directory 
+3. copy các file package.json và package.lock.jsọn vào working directory
 4. chạy npm installl để tải module
 5. copy các file còn lại vào
 6. chỉ rằn appp sẽ chạy ở cổng 3000
@@ -20,7 +20,7 @@ Created time: August 4, 2024 5:42 PM
     2. đặng nhập vào dockerhub
     3. build image từ dockerfile và run container
     4. sleep 10 giây là show log của container đang chạy
-    5. push image vủa build thành công lên dockerhub 
+    5. push image vủa build thành công lên dockerhub
 3. Job tiếp theo là cd
     1. đăng nhập vào aws ec2 instance bằng ssh
     2. pull image vừa mới tạo trên dockerhub

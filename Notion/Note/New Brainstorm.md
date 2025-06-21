@@ -1,12 +1,14 @@
-
+---
 Created by: liemgumball
-Created time: February 15, 2024 4:03 PM
-Tags: Product
+Created time: 2024-02-15T16:03
+tags:
+  - Product
+---
+> [!important] **Notion Tip:**
+> 
+> Use this template to source ideas from your team even when you're not in the same room. Articulate a question you'd like to have answered. At the same time, people can add their bulleted ideas below that question and tag themselves. Click New topic to generate a new question to answer.
 
-<aside>
-💡 **Notion Tip:** Use this template to source ideas from your team even when you're not in the same room. Articulate a question you'd like to have answered. At the same time, people can add their bulleted ideas below that question and tag themselves. Click New topic to generate a new question to answer.
-
-</aside>
+  
 
 # [Question to answer]
 
@@ -17,15 +19,14 @@ Tags: Product
 
 # Whiteboard
 
-<aside>
-💡 **Notion Tip:** Notion makes it easy to pull in brainstorming resources from other apps so you all stay focused on the same doc. For instance, you can embed mind-mapping boards from Miro and files from Figma that will update in real time.
+> [!important] **Notion Tip:**
+> 
+> Notion makes it easy to pull in brainstorming resources from other apps so you all stay focused on the same doc. For instance, you can embed mind-mapping boards from Miro and files from Figma that will update in real time.
 
-</aside>
+==↓ Embed examples below==
 
-↓ Embed examples below
+[](https://www.notion.soundefined)
 
-[https://www.notion.so](https://www.notion.so)
+[](https://www.notion.soundefined)
 
-[https://www.notion.so](https://www.notion.so)
-
-[https://www.notion.so](https://www.notion.so)
+[](https://www.notion.soundefined)

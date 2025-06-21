@@ -1,16 +1,17 @@
+==**Jest**== is an open source ==**JavaScript**== testing framework developed by ==**Facebook**==. It's commonly  
+used to test ==**React**== code, but can also be used to test ==**Node.js**== applications.
 
-**Jest** is an open source **JavaScript** testing framework developed by **Facebook**. It's commonly
-used to test **React** code, but can also be used to test **Node.js** applications.
-
-[Jest](http://jestjs.io)
+> [!info] Jest  
+> Jest is a delightful JavaScript Testing Framework with a focus on simplicity.  
+> [http://jestjs.io](http://jestjs.io)  
 
 ### Target
 
-- Getting start with **Jest**
+- Getting start with ==**Jest**==
 - Mocking concept
-- Testing with  [MongoDB](MongoDB.md)
+- Testing with [[MongoDB]]
 
-```jsx
+```JavaScript
 const uppercase = require('../uppercase')
 
 describe('uppercase', () => {
@@ -22,14 +23,14 @@ describe('uppercase', () => {
 
 ## Mock function
 
-Mock functions allow you to test the links between code by erasing the actual implementation of a function.
+==Mock functions== allow you to test the links between code by erasing the actual implementation of a function.
 
 There are two ways to mock functions
 
 - Creating a mock function to use in test code
 - Writing a manual mock to override a module dependency
 
-```jsx
+```JavaScript
 const forEach = require('./forEach');
 
 const mockCallback = jest.fn(x => 42 + x);
@@ -53,7 +54,7 @@ test('forEach mock function', () => {
 
 ### Mock return value
 
-```jsx
+```JavaScript
 const myMock = jest.fn();
 console.log(myMock());
 // > undefined
@@ -66,7 +67,7 @@ console.log(myMock(), myMock(), myMock(), myMock());
 
 ### Mocking Module
 
-```jsx
+```JavaScript
 import axios from 'axios';
 
 class Users {
@@ -80,7 +81,7 @@ export default Users;
 
 Mock the module we can provide a `mockResolvedValue` for `.get` that returns the data we want
 
-```jsx
+```JavaScript
 import axios from 'axios';
 import Users from './users';
 
@@ -98,22 +99,26 @@ test('should fetch users', () => {
 });
 ```
 
-[Mock Functions · Jest](https://jestjs.io/docs/mock-functions#mock-implementations)
+> [!info] Mock Functions · Jest  
+> Mock functions allow you to test the links between code by erasing the actual implementation of a function, capturing calls to the function (and the parameters passed in those calls), capturing instances of constructor functions when instantiated with new, and allowing test-time configuration of return values.  
+> [https://jestjs.io/docs/mock-functions#mock-implementations](https://jestjs.io/docs/mock-functions#mock-implementations)  
 
-[How To Mock Fetch in Jest](https://www.leighhalliday.com/mock-fetch-jest)
+> [!info] How To Mock Fetch in Jest  
+> Making HTTP requests in tests isn't a great idea in most situations.  
+> [https://www.leighhalliday.com/mock-fetch-jest](https://www.leighhalliday.com/mock-fetch-jest)  
 
 ## Jest with MongoDB
 
 1. Install modules
     
-    ```jsx
+    ```JavaScript
     npm install -D @shelf/jest-mongodb
     npm install mongodb
     ```
     
 2. Specify jest `preset`
     
-    ```jsx
+    ```JavaScript
     /** @type {import('jest').Config} */
     const config = {
     	preset: '@shelf/jest-mongodb',
@@ -121,12 +126,11 @@ test('should fetch users', () => {
     }
     
     module.exports = config
-    
     ```
     
 3. Write test (there's no need to load any dependencies)
     
-    ```jsx
+    ```JavaScript
     const {MongoClient} = require('mongodb');
     
     describe('insert', () => {

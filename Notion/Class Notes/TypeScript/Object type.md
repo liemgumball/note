@@ -1,14 +1,14 @@
-## In **JavaScript**, the fundamental way that we group and pass around data is through objects. In **TypeScript**, we represent those through *object types*.
+## In **==JavaScript==**, the fundamental way that we group and pass around data is through objects. In ==**TypeScript**==, we represent those through ==_object types_==.
 
-```tsx
+```TypeScript
 function greet(person: { name: string; age: number }) {
   return "Hello " + person.name;
 }
 ```
 
-They can be named by using either an *interface or a type alias*
+They can be named by using either an ==_interface_== _or a_ ==_type alias_==
 
-```tsx
+```TypeScript
 interface Person {
   name: string;
   age: number;
@@ -20,13 +20,17 @@ type Person = {
 }
 ```
 
+  
+
 ## Properties
 
 In JavaScript, even if the property has never been set, we can still access it - it’s just going to give us the value `undefined`. We can just handle `undefined` specially by checking for it.
 
+  
+
 ## `readonly` Properties
 
-```tsx
+```TypeScript
 interface SomeType {
   readonly prop: string;
 }
@@ -41,12 +45,13 @@ function doSomething(obj: SomeType) {
 }
 ```
 
-<aside>
-💡 Using the `readonly` modifier doesn’t necessarily imply that a value is totally immutable - or in other words, that its internal contents can’t be changed. It just means the property itself can’t be re-written to.
+  
 
-</aside>
+> [!important] Using the 
+> 
+> `readonly` modifier doesn’t necessarily imply that a value is totally immutable - or in other words, that its internal contents can’t be changed. It just means the property itself can’t be re-written to.
 
-```tsx
+```TypeScript
 interface Person {
   name: string;
   age: number;
@@ -70,9 +75,11 @@ writablePerson.age++;
 console.log(readonlyPerson.age); // prints '43'
 ```
 
+  
+
 ## **Index Signatures**
 
-```tsx
+```TypeScript
 interface ReadonlyStringArray {
   readonly [index: number]: string;
  
@@ -86,9 +93,11 @@ myArray[2] = "Mallory";
 // Index signature in type 'ReadonlyStringArray' only permits reading.
 ```
 
+  
+
 ## **Excess Property Checks**
 
-```tsx
+```TypeScript
 interface SquareConfig {
   color?: string;
   width?: number;
@@ -101,19 +110,23 @@ let mySquare = createSquare({ colour: "red", width: 100 });
 // 'colour' does not exist in type 'SquareConfig'. Did you mean to write 'color'?
 ```
 
-The given argument to `createSquare` is spelled `*colour*` instead of `color`. In plain **JavaScript**, this sort of thing fails silently.
+The given argument to `createSquare` is spelled `_colour_` instead of `color`. In plain **==JavaScript==**, this sort of thing fails silently.
 
-However, **TypeScript** takes the stance that there’s probably a bug in this code. Object literals get special treatment and undergo *excess property checking* when assigning them to other variables, or passing them as arguments. If an object literal has any properties that the “target type” doesn’t have, you’ll get an error
+However, ==**TypeScript**== takes the stance that there’s probably a ==bug== in this code. Object literals get special treatment and undergo _excess property checking_ when assigning them to other variables, or passing them as arguments. If an object literal has any properties that the “target type” doesn’t have, you’ll get an ==error==
+
+  
 
 Getting around these checks is actually really simple. The easiest method is to just use a type assertion:
 
-```tsx
+```TypeScript
 let mySquare = createSquare({ width: 100, opacity: 0.5 } as SquareConfig);
 ```
 
-However, a better approach might be to add a string index signature if we’re sure that the object can have some extra properties that are used in some special way.
+  
 
-```tsx
+However, a better approach might be to add a ==string index signature== if we’re sure that the object can have some extra properties that are used in some special way.
+
+```TypeScript
 interface SquareConfig {
   color?: string;
   width?: number;
@@ -121,9 +134,11 @@ interface SquareConfig {
 }
 ```
 
+  
+
 ## **Extending Types**
 
-```tsx
+```TypeScript
 interface Colorful {
   color: string;
 }
@@ -140,11 +155,13 @@ const cc: ColorfulCircle = {
 };
 ```
 
+  
+
 ## **Intersection Types**
 
-`interface` allowed us to build up new types from other types by extending them. **TypeScript** provides another construct called *intersection types* that is mainly used to combine existing object types.
+`interface` allowed us to build up new types from other types by extending them. ==**TypeScript**== provides another construct called ==_intersection types_== that is mainly used to combine existing object types.
 
-```tsx
+```TypeScript
 interface Colorful {
   color: string;
 }
@@ -155,9 +172,11 @@ interface Circle {
 type ColorfulCircle = Colorful & Circle;
 ```
 
+  
+
 ## Generic `object` Types
 
-```tsx
+```TypeScript
 interface Box<Type> {
   contents: Type;
 }
@@ -174,7 +193,7 @@ type AppleBox = Box<Apple>;
 
 Much like the `Box` type above, `Array` itself is a generic type.
 
-```tsx
+```TypeScript
 interface Array<Type> {
   /**
    * Gets or sets the length of the array.
@@ -195,14 +214,15 @@ interface Array<Type> {
 }
 ```
 
-<aside>
-💡 **TypeScript** provides a shorthand syntax for `Array<Type>` with `Type[]`
+> [!important] ==**TypeScript**==
+> 
+> provides a shorthand syntax for `Array<Type>` with `Type[]`
 
-</aside>
+  
 
 ## The `ReadonlyArray` Type
 
-```tsx
+```TypeScript
 function doStuff(values: ReadonlyArray<string>) {
   // We can read from 'values'...
   const copy = values.slice();
@@ -214,29 +234,34 @@ Property 'push' does not exist on type 'readonly string[]'.
 }
 ```
 
+  
+
 Unlike `Array`, there isn’t a `ReadonlyArray` constructor that we can use.
 
-```tsx
+```TypeScript
 new ReadonlyArray("red", "green", "blue");
 //'ReadonlyArray' only refers to a type, but is being used as a value here.
 ```
 
 Instead, we can assign regular `Array`s to `ReadonlyArray`
 
-```tsx
+```TypeScript
 const roArray: ReadonlyArray<string> = ["red", "green", "blue"];
 ```
 
-<aside>
-💡 Just as **TypeScript** provides a shorthand syntax for `Array<Type>` with `Type[]`, it also provides a shorthand syntax for `ReadonlyArray<Type>` with `readonly Type[]`.
+  
 
-</aside>
+> [!important] Just as
+> 
+> ==**TypeScript**== provides a shorthand syntax for `Array<Type>` with `Type[]`, it also provides a shorthand syntax for `ReadonlyArray<Type>` with `readonly Type[]`.
+
+  
 
 ## **Tuple Types**
 
-A *tuple type* is another sort of `Array` type that knows exactly how many elements it contains, and exactly which types it contains at specific positions.
+A ==_tuple type_== is another sort of `Array` type that knows exactly how many elements it contains, and exactly which types it contains at specific positions.
 
-```tsx
+```TypeScript
 type StringNumberPair = [string, number];
 
 function doSomething(pair: StringNumberPair) {
@@ -247,17 +272,21 @@ function doSomething(pair: StringNumberPair) {
 }
 ```
 
+  
+
 Tuples can also have rest elements, which have to be an array/tuple type.
 
-```tsx
+```TypeScript
 type StringNumberBooleans = [string, number, ...boolean[]];
 type StringBooleansNumber = [string, ...boolean[], number];
 type BooleansStringNumber = [...boolean[], string, number];
 ```
 
-Tuples tend to be created and left un-modified in most code, so annotating types as `readonly` tuples when possible is a good default. This is also important given that array literals with `const` assertions will be inferred with `readonly` tuple types.
+  
 
-```tsx
+==Tuples== tend to be created and left un-modified in most code, so annotating types as `readonly` tuples when possible is a good default. This is also important given that array literals with `const` assertions will be inferred with `readonly` tuple types.
+
+```TypeScript
 let point = [3, 4] as const;
  
 function distanceFromOrigin([x, y]: [number, number]) {

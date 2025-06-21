@@ -1,37 +1,38 @@
-Created: July 12, 2023 1:51 PM
+---
+Created: 2023-07-12T13:51
 Class: Agility IO InternShip
 Type: Front-end
-Materials: https://www.javatpoint.com/es5-vs-es6, https://www.w3schools.com/Js/js_versions.asp
-Reviewed: Yes
-Edited: May 10, 2025 2:46 PM
-
-# Required
-- [JavaScript](JavaScript.md)
-
-
-# Difference between ES5 and ES6
+Materials:
+  - https://www.javatpoint.com/es5-vs-es6
+  - https://www.w3schools.com/Js/js_versions.asp
+Reviewed: true
+Edited: 2025-05-10T14:46
+---
+# Difference between ==ES5== and ==ES6==
 
 ## ES5
 
-ES5 is the fifth edition of the **ECMAScript. Introduced in 2009**
+ES5 is the ==fifth== edition of the **ECMAScript. Introduced in 2009**
 
 ## ES6
 
-ES6 is the sixth edition of the **ECMAScript. Introduced in 2015**
+ES6 is the ==sixth== edition of the **ECMAScript. Introduced in 2015**
 
 ## Data types
 
-In **ES5** supports primitive data types that are **`string`, `number`, `boolean`, `null`,** and **`undefined`**.
+In ==**ES5**== supports primitive data types that are `**string**`**,** `**number**`**,** `**boolean**`**,** `**null**`**,** and `**undefined**`.
 
-In **ES6**, there are some additions to **JavaScript** data types. It introduced a new primitive data type **`symbol`** for supporting unique values.
+In ==**ES6**==, there are some additions to **==JavaScript==** data types. It introduced a new primitive data type `**symbol**` for supporting unique values.
 
 ## Variables
 
-We could only define the variables by using the **`var`** keyword.
+We could only define the variables by using the `**var**` keyword.
 
-There are two new ways to define variables that are **`let`** and **`const`** uses **block scope**
+  
 
-```jsx
+There are two new ways to define variables that are `**let**` and `**const**` uses ==**block scope**==
+
+```JavaScript
 {
   let x = 2;
 	const y = 3;
@@ -43,11 +44,11 @@ There are two new ways to define variables that are **`let`** and **`const`** 
 
 ## Arrow Functions
 
-In **ES5**, both **`function`** and **`return`** keywords are used to define a function.
+In ==**ES5**==, both `**function**` and `**return**` keywords are used to define a function.
 
-An **arrow function** is a feature introduced in ES6 by which we don't require the **`function`** keyword
+An **==arrow function==** is a feature introduced in ES6 by which we don't require the `**function**` keyword
 
-```jsx
+```JavaScript
 // in ES5
 function square(num) {
   return num * num;
@@ -62,9 +63,9 @@ var square = (num) => num * num;
 
 ## Spread operator `(…)`
 
-It is introduced in **ES6**, which makes it easy to merge arrays and objects.
+It is introduced in ==**ES6**==, which makes it easy to merge ==arrays== and ==objects==.
 
-```jsx
+```JavaScript
 var target = { name: "xyz", age: 20 };
 var source1 = { name: "abc", grade: 12 };
 var source2 = { gender: "female" };
@@ -84,9 +85,9 @@ console.log(updatedTarget, target);
 
 ## **Object Destructuring**
 
-Before **ES6**, we had to extract objects manually, which is time-consuming, and it takes more lines of code as well. **ES6** introduced an elegant way of unpacking object properties.
+Before ==**ES6**==, we had to extract objects ==manually==, which is time-consuming, and it takes more lines of code as well. **==ES6==** introduced an elegant way of ==unpacking== object properties.
 
-```jsx
+```JavaScript
 var object = { name: "liem", age: 22, grade: 4, gender: "male" };
 
 // ES5
@@ -101,7 +102,7 @@ var { name, age, grade, gender } = object;
 
 ## Defining Objects
 
-```jsx
+```JavaScript
 var name = "liem";
 var age = 22;
 var grade = 4;
@@ -115,7 +116,7 @@ var object2 = { name, age, grade, gender };
 
 ## Module Export
 
-```jsx
+```JavaScript
 var myTestModule = { name: "liem", age: 22, grade: 4, gender: "male" };
 
 // ES5
@@ -131,7 +132,7 @@ export const age = 22;
 
 ## Module Import
 
-```jsx
+```JavaScript
 //ES5
 var myTestModule = require("./myTestModule");
 
@@ -144,9 +145,9 @@ import { name, age } from "./myTestModule";
 
 ## String I**nterpolation**
 
-**ES6** introduced a new feature known as **Template Literal ```** that allows us to perform string interpolation more conveniently.
+==**ES6**== introduced a new feature known as ==**Template Literal**== ``**`**`` that allows us to perform string interpolation more conveniently.
 
-```jsx
+```JavaScript
 var name = "liem";
 var age = 22;
 var grade = 4;
@@ -164,7 +165,7 @@ Consider a simple example that checks whether the `user` has access or not.
 
 ### ES5
 
-```jsx
+```JavaScript
 var access = true;
 function callback(message) {
   console.log("Success!" + message);
@@ -185,7 +186,7 @@ function test(callback, errorCallback) {
 
 ### ES6
 
-```jsx
+```JavaScript
 var access = true;
 function test1() {
   return new Promise((resolve, reject) => {
