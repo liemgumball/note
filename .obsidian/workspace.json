@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Class Notes/Docker/Docker.md",
-                "mode": "preview",
+                "file": "Teaching/Web/Front-end/Course.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Docker"
+              "title": "Course"
             }
           }
         ]
@@ -179,13 +179,23 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "76cbfe103759ff7d",
+  "active": "6f47d75cddb7b0dd",
   "lastOpenFiles": [
-    "Class Notes/React/Thinking in React/Thinking in React.md",
-    "Class Notes/React/React.md",
-    "Class Notes/Class Notes.md",
+    "Teaching/Web/Front-end/HTML.md",
+    "Web Technical/ES5 vs ES6.md",
+    "Teaching/Web/Front-end/Course.md",
+    "Web Technical/Java/📚 Java Learning Plan.md",
+    "Web Technical/Java/Switching JDK version.md",
+    "Web Technical/HTML-CSS training.md",
+    "Web Technical/React advanced.md",
+    "Web Technical/Docker/Docker.md",
+    "Web Technical/Java",
+    "Java.md",
+    "Web Technical/React/Thinking in React/Thinking in React.md",
+    "Web Technical/React/React.md",
+    "Web Technical/Class Notes.md",
     "Class Notes/Data Minning/Data Minning.md",
-    "Class Notes/TanStack Query.md",
+    "Web Technical/TanStack Query.md",
     "Note/Front-end developer interview questions/attachments/Untitled.png",
     "Note/Data structures and Algorithms/attachments/Untitled 1.png",
     "Note/Data structures and Algorithms/attachments/Untitled.png",
@@ -203,7 +213,6 @@
     "Note/React developer interview questions.md",
     "Note/Native Deployment with AWS/Native Deployment with AWS.md",
     "Note/New Technical Spec.md",
-    "Note/Note.md",
     "Note/Front-end developer interview questions/attachments",
     "Note/Data structures and Algorithms/attachments",
     "Note/Native Deployment with AWS/attachments",
@@ -214,18 +223,9 @@
     "Note/Native Deployment with AWS",
     "Note",
     "Technical Resource/AI resume reviewer/attachments/gumball.jpeg",
-    "Technical Resource/Open APIs and Data Resource/Open APIs and Data Resource/OMDb API.md",
-    "Technical Resource/Open APIs and Data Resource/Open APIs and Data Resource/Google Books APIs.md",
-    "Technical Resource/List Template/List/Untitled.md",
-    "Technical Resource/List Template/List/Page 2.md",
-    "Technical Resource/List Template/List/Page 3.md",
-    "Technical Resource/List Template/List/Page 1.md",
-    "Technical Resource/New Technical Spec.md",
-    "Technical Resource/New Product Spec (PRD).md",
-    "Technical Resource/AI resume reviewer/attachments",
-    "Class Notes/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 3.png",
-    "Class Notes/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 2.png",
-    "Class Notes/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 1.png",
-    "Class Notes/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled.png"
+    "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 3.png",
+    "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 2.png",
+    "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 1.png",
+    "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled.png"
   ]
 }

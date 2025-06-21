@@ -4,7 +4,7 @@
 
 **Duration**: 6–9 months (2 sessions/week)
 
-**Focus**: Frontend Development with HTML, CSS, JavaScript, and React
+**Focus**: Front end Development with HTML, CSS, JavaScript, and React
 
 ---
 
@@ -15,8 +15,8 @@
 - How the web works (client, server, browser)
 - What is HTML?
 - Tags, elements, attributes
-- Basic structure of a webpage (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`)
-- Build: Simple "Hello World" webpage
+- Basic structure of a web page (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`)
+- Build: Simple "Hello World" web page
 
 ### Week 2: HTML Deep Dive + First Project
 
