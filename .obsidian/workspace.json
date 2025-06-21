@@ -4,17 +4,55 @@
     "type": "split",
     "children": [
       {
-        "id": "09475c569d25ed5c",
+        "id": "0dc19412c74a9ffd",
         "type": "tabs",
         "children": [
           {
-            "id": "b4bf9d92bd3c76ea",
+            "id": "0e8db75781b1d609",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Note/Front-end developer interview questions/Front-end developer interview questions.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Front-end developer interview questions"
+            }
+          },
+          {
+            "id": "a47e00aa461831a5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Note/Front-end developer interview questions/React developer interview questions.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "React developer interview questions"
             }
           }
         ]
@@ -74,7 +112,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "8030fd83c7cd2f87",
@@ -175,10 +214,23 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "76cbfe103759ff7d",
+  "active": "0e8db75781b1d609",
   "lastOpenFiles": [
+    "Note/Front-end developer interview questions/React developer interview questions.md",
+    "Note/Front-end developer interview questions/Front-end developer interview questions.md",
     "Web Technical/Java/Java.md",
-    "Web Technical/Java/📚 Java Learning Plan.md",
+    "Note/CICD.md",
+    "Note/Note.md",
+    "Note/Untitled.md",
+    "Note/Native Deployment with AWS/Native Deployment with AWS.md",
+    "Web Technical/Docker/Docker.md",
+    "Web Technical/MongoDB/MongoDB.md",
+    "Web Technical/More on Typescripts/More on Typescripts.md",
+    "Web Technical/React/React.md",
+    "Web Technical/NodeJS/NodeJS.md",
+    "Web Technical/React 19/React 19.md",
+    "Web Technical/NestJS/NestJS.md",
+    "Web Technical/Java/Java Learning Plan.md",
     "Web Technical/Java/attachments/Pasted image 20250621162939.png",
     "Web Technical/Java/attachments",
     "Teaching/Web/Front-end/Course.md",
@@ -187,11 +239,9 @@
     "Web Technical/Java/Switching JDK version.md",
     "Web Technical/HTML-CSS training.md",
     "Web Technical/React advanced.md",
-    "Web Technical/Docker/Docker.md",
     "Web Technical/Java",
     "Java.md",
     "Web Technical/React/Thinking in React/Thinking in React.md",
-    "Web Technical/React/React.md",
     "Web Technical/Class Notes.md",
     "Class Notes/Data Minning/Data Minning.md",
     "Web Technical/TanStack Query.md",
@@ -200,16 +250,6 @@
     "Note/Data structures and Algorithms/attachments/Untitled.png",
     "Note/Native Deployment with AWS/attachments/Untitled.png",
     "Note/Example Brainstorm/attachments/gumball.jpeg",
-    "Note/Front-end developer interview questions/Front-end developer interview questions.md",
-    "Note/Example Brainstorm/Example Brainstorm.md",
-    "Note/Untitled.md",
-    "Note/CICD.md",
-    "Note/Example PRD.md",
-    "Note/Example Tech Spec.md",
-    "Note/New Brainstorm.md",
-    "Note/New Product Spec (PRD).md",
-    "Note/Data structures and Algorithms/Data structures and Algorithms.md",
-    "Note/React developer interview questions.md",
     "Note/Front-end developer interview questions/attachments",
     "Note/Data structures and Algorithms/attachments",
     "Note/Native Deployment with AWS/attachments",
