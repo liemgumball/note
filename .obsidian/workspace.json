@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "78a9266cacac810f",
+        "id": "09475c569d25ed5c",
         "type": "tabs",
         "children": [
           {
-            "id": "6f47d75cddb7b0dd",
+            "id": "b4bf9d92bd3c76ea",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Teaching/Web/Front-end/Course.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Course"
+              "title": "New tab"
             }
           }
         ]
@@ -140,13 +136,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Notion/Class Notes/Linux.md",
+                "file": "Web Technical/Java/Java.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Linux"
+              "title": "Outline of Java"
             }
           },
           {
@@ -160,11 +156,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 347.5
+    "width": 347.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -175,16 +172,18 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "obsidian-excalidraw-plugin:New drawing": false,
-      "obsidian-git:Open Git source control": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6f47d75cddb7b0dd",
+  "active": "76cbfe103759ff7d",
   "lastOpenFiles": [
+    "Web Technical/Java/Java.md",
+    "Web Technical/Java/📚 Java Learning Plan.md",
+    "Web Technical/Java/attachments/Pasted image 20250621162939.png",
+    "Web Technical/Java/attachments",
+    "Teaching/Web/Front-end/Course.md",
     "Teaching/Web/Front-end/HTML.md",
     "Web Technical/ES5 vs ES6.md",
-    "Teaching/Web/Front-end/Course.md",
-    "Web Technical/Java/📚 Java Learning Plan.md",
     "Web Technical/Java/Switching JDK version.md",
     "Web Technical/HTML-CSS training.md",
     "Web Technical/React advanced.md",
@@ -211,8 +210,6 @@
     "Note/New Product Spec (PRD).md",
     "Note/Data structures and Algorithms/Data structures and Algorithms.md",
     "Note/React developer interview questions.md",
-    "Note/Native Deployment with AWS/Native Deployment with AWS.md",
-    "Note/New Technical Spec.md",
     "Note/Front-end developer interview questions/attachments",
     "Note/Data structures and Algorithms/attachments",
     "Note/Native Deployment with AWS/attachments",
@@ -221,11 +218,9 @@
     "Note/Example Brainstorm",
     "Note/Data structures and Algorithms",
     "Note/Native Deployment with AWS",
-    "Note",
     "Technical Resource/AI resume reviewer/attachments/gumball.jpeg",
     "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 3.png",
     "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 2.png",
-    "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 1.png",
-    "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled.png"
+    "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 1.png"
   ]
 }
