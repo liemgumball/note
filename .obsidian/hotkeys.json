@@ -23,5 +23,14 @@
       ],
       "key": "]"
     }
+  ],
+  "file-explorer:new-file": [],
+  "obsidian-advanced-new-file:advanced-new-file": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "N"
+    }
   ]
 }
