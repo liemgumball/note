@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Teaching/Web/Front-end/Course.md",
-                "mode": "source",
+                "file": "Web Technical/MongoDB/MongoDB.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Course"
+              "title": "MongoDB"
             }
           }
         ]
@@ -180,11 +180,13 @@
   },
   "active": "6f47d75cddb7b0dd",
   "lastOpenFiles": [
-    "Teaching/Web/Front-end/HTML.md",
-    "Web Technical/ES5 vs ES6.md",
-    "Teaching/Web/Front-end/Course.md",
+    "Web Technical/MongoDB/Mongoose.md",
+    "Web Technical/React 19/React 19.md",
     "Web Technical/Java/📚 Java Learning Plan.md",
     "Web Technical/Java/Switching JDK version.md",
+    "Teaching/Web/Front-end/HTML.md",
+    "Teaching/Web/Front-end/Course.md",
+    "Web Technical/ES5 vs ES6.md",
     "Web Technical/HTML-CSS training.md",
     "Web Technical/React advanced.md",
     "Web Technical/Docker/Docker.md",
@@ -210,8 +212,6 @@
     "Note/New Product Spec (PRD).md",
     "Note/Data structures and Algorithms/Data structures and Algorithms.md",
     "Note/React developer interview questions.md",
-    "Note/Native Deployment with AWS/Native Deployment with AWS.md",
-    "Note/New Technical Spec.md",
     "Note/Front-end developer interview questions/attachments",
     "Note/Data structures and Algorithms/attachments",
     "Note/Native Deployment with AWS/attachments",
