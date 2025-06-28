@@ -15,3 +15,5 @@ Icon?
 *.log
 *.bak
 *.old
+
+/.obsidian/workspace.json
