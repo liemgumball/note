@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "0dc19412c74a9ffd",
+        "id": "a00a9b12d599879c",
         "type": "tabs",
         "children": [
           {
-            "id": "0e8db75781b1d609",
+            "id": "d155b4c9486202ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Note/Front-end developer interview questions/Front-end developer interview questions.md",
-                "mode": "source",
+                "file": "Web Technical/Java/Java Learning Plan.md",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,31 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Front-end developer interview questions"
-            }
-          },
-          {
-            "id": "a47e00aa461831a5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Note/Front-end developer interview questions/React developer interview questions.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "React developer interview questions"
+              "title": "Java Learning Plan"
             }
           }
         ]
@@ -112,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "8030fd83c7cd2f87",
@@ -195,12 +170,11 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 347.5,
-    "collapsed": true
+    "width": 347.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,11 +188,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0e8db75781b1d609",
+  "active": "d155b4c9486202ab",
   "lastOpenFiles": [
+    "Excalidraw/Drawing 2025-06-21 22.37.38.excalidraw.md",
+    "Excalidraw",
+    "Web Technical/Java/Java Learning Plan.md",
+    "Web Technical/Java/Java.md",
+    "Web Technical/React/React.md",
+    "Web Technical/React/Installation/Installation.md",
+    "Web Technical/Java/Switching JDK version.md",
     "Note/Front-end developer interview questions/React developer interview questions.md",
     "Note/Front-end developer interview questions/Front-end developer interview questions.md",
-    "Web Technical/Java/Java.md",
     "Note/CICD.md",
     "Note/Note.md",
     "Note/Untitled.md",
@@ -226,25 +206,20 @@
     "Web Technical/Docker/Docker.md",
     "Web Technical/MongoDB/MongoDB.md",
     "Web Technical/More on Typescripts/More on Typescripts.md",
-    "Web Technical/React/React.md",
     "Web Technical/NodeJS/NodeJS.md",
     "Web Technical/React 19/React 19.md",
     "Web Technical/NestJS/NestJS.md",
-    "Web Technical/Java/Java Learning Plan.md",
     "Web Technical/Java/attachments/Pasted image 20250621162939.png",
     "Web Technical/Java/attachments",
     "Teaching/Web/Front-end/Course.md",
     "Teaching/Web/Front-end/HTML.md",
     "Web Technical/ES5 vs ES6.md",
-    "Web Technical/Java/Switching JDK version.md",
     "Web Technical/HTML-CSS training.md",
     "Web Technical/React advanced.md",
     "Web Technical/Java",
     "Java.md",
     "Web Technical/React/Thinking in React/Thinking in React.md",
     "Web Technical/Class Notes.md",
-    "Class Notes/Data Minning/Data Minning.md",
-    "Web Technical/TanStack Query.md",
     "Note/Front-end developer interview questions/attachments/Untitled.png",
     "Note/Data structures and Algorithms/attachments/Untitled 1.png",
     "Note/Data structures and Algorithms/attachments/Untitled.png",
@@ -257,7 +232,6 @@
     "Note/Front-end developer interview questions",
     "Note/Example Brainstorm",
     "Note/Data structures and Algorithms",
-    "Note/Native Deployment with AWS",
     "Technical Resource/AI resume reviewer/attachments/gumball.jpeg",
     "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 3.png",
     "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 2.png",
