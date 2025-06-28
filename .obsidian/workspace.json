@@ -13,22 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Technical/Java/Java Learning Plan.md",
+                "file": "Web Technical/MongoDB/MongoDB.md",
                 "mode": "preview",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Java Learning Plan"
+              "title": "MongoDB"
             }
           }
         ]
@@ -190,38 +180,12 @@
   },
   "active": "d155b4c9486202ab",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "Excalidraw/Drawing 2025-06-21 22.37.38.excalidraw.md",
-    "Excalidraw",
-    "Web Technical/Java/Java Learning Plan.md",
-    "Web Technical/Java/Java.md",
-    "Web Technical/React/React.md",
-    "Web Technical/React/Installation/Installation.md",
-    "Web Technical/Java/Switching JDK version.md",
-    "Note/Front-end developer interview questions/React developer interview questions.md",
-    "Note/Front-end developer interview questions/Front-end developer interview questions.md",
-    "Note/CICD.md",
-    "Note/Note.md",
-    "Note/Untitled.md",
-    "Note/Native Deployment with AWS/Native Deployment with AWS.md",
-    "Web Technical/Docker/Docker.md",
-    "Web Technical/MongoDB/MongoDB.md",
-    "Web Technical/More on Typescripts/More on Typescripts.md",
-    "Web Technical/NodeJS/NodeJS.md",
-    "Web Technical/React 19/React 19.md",
-    "Web Technical/NestJS/NestJS.md",
-    "Web Technical/Java/attachments/Pasted image 20250621162939.png",
-    "Web Technical/Java/attachments",
-    "Teaching/Web/Front-end/Course.md",
-    "Teaching/Web/Front-end/HTML.md",
-=======
     "Web Technical/MongoDB/Mongoose.md",
     "Web Technical/React 19/React 19.md",
     "Web Technical/Java/📚 Java Learning Plan.md",
     "Web Technical/Java/Switching JDK version.md",
     "Teaching/Web/Front-end/HTML.md",
     "Teaching/Web/Front-end/Course.md",
->>>>>>> c3441b7cbcb36d714fa73fb4d42c70b4de924ed0
     "Web Technical/ES5 vs ES6.md",
     "Web Technical/HTML-CSS training.md",
     "Web Technical/React advanced.md",
@@ -234,8 +198,6 @@
     "Note/Data structures and Algorithms/attachments/Untitled.png",
     "Note/Native Deployment with AWS/attachments/Untitled.png",
     "Note/Example Brainstorm/attachments/gumball.jpeg",
-<<<<<<< HEAD
-=======
     "Note/Front-end developer interview questions/Front-end developer interview questions.md",
     "Note/Example Brainstorm/Example Brainstorm.md",
     "Note/Untitled.md",
@@ -246,7 +208,6 @@
     "Note/New Product Spec (PRD).md",
     "Note/Data structures and Algorithms/Data structures and Algorithms.md",
     "Note/React developer interview questions.md",
->>>>>>> c3441b7cbcb36d714fa73fb4d42c70b4de924ed0
     "Note/Front-end developer interview questions/attachments",
     "Note/Data structures and Algorithms/attachments",
     "Note/Native Deployment with AWS/attachments",
