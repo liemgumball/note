@@ -4,17 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "50926aff7fde1e67",
+        "id": "e5f5669b44d92463",
         "type": "tabs",
         "children": [
           {
-            "id": "6b74a3fd6c8a3e51",
+            "id": "ac937de819926647",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Web Technical/Java/Java.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Java"
             }
           }
         ]
@@ -74,7 +88,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "8030fd83c7cd2f87",
@@ -108,11 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Web Technical/Java/Java.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Java"
             }
           },
           {
@@ -139,9 +155,24 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "85131e4335d02609",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Web Technical/Java/Java.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Java"
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -159,11 +190,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6b74a3fd6c8a3e51",
+  "active": "ac937de819926647",
   "lastOpenFiles": [
+    "Web Technical/Java/attachments/Pasted image 20250628104102.png",
+    "Web Technical/Java/Java.md",
     "Note/Native Deployment with AWS/Native Deployment with AWS.md",
     "Excalidraw/Drawing 2025-06-21 22.37.38.excalidraw.md",
-    "Web Technical/Java/Java.md",
     "Web Technical/Java/Java Learning Plan.md",
     "Excalidraw",
     "Web Technical/React/React.md",
@@ -190,7 +222,6 @@
     "Web Technical/Java",
     "Java.md",
     "Web Technical/React/Thinking in React/Thinking in React.md",
-    "Web Technical/Class Notes.md",
     "Note/Front-end developer interview questions/attachments/Untitled.png",
     "Note/Data structures and Algorithms/attachments/Untitled 1.png",
     "Note/Data structures and Algorithms/attachments/Untitled.png",
