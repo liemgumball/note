@@ -32,5 +32,11 @@
       ],
       "key": "N"
     }
+  ],
+  "obsidian-prozen:zenmode": [
+    {
+      "modifiers": [],
+      "key": "F11"
+    }
   ]
 }

@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "92435d67171e870d",
+        "id": "703dac1299e4c3e5",
         "type": "tabs",
         "children": [
           {
-            "id": "7dbe0536b3d1697a",
+            "id": "5839c391a574f1b5",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -174,8 +174,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7dbe0536b3d1697a",
+  "active": "5839c391a574f1b5",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
+    "Web Technical/Java/attachments/Pasted image 20250628104102.png",
+    "Web Technical/Java/attachments",
+    "Web Technical/Java/Java.md",
+    "Web Technical/Java/Java Learning Plan.md",
+    "Note/Front-end developer interview questions/React developer interview questions.md",
+    "Excalidraw/Drawing 2025-06-21 22.37.38.excalidraw.md",
+    "Excalidraw",
     "Web Technical/MongoDB/MongoDB.md",
     "Web Technical/MongoDB/Mongoose.md",
     "Web Technical/React 19/React 19.md",
@@ -203,11 +211,6 @@
     "Note/Example Brainstorm/Example Brainstorm.md",
     "Note/Untitled.md",
     "Note/CICD.md",
-    "Note/Example PRD.md",
-    "Note/Example Tech Spec.md",
-    "Note/New Brainstorm.md",
-    "Note/New Product Spec (PRD).md",
-    "Note/Data structures and Algorithms/Data structures and Algorithms.md",
     "Note/Front-end developer interview questions/attachments",
     "Note/Data structures and Algorithms/attachments",
     "Note/Native Deployment with AWS/attachments",
@@ -215,12 +218,9 @@
     "Note/Front-end developer interview questions",
     "Note/Example Brainstorm",
     "Note/Data structures and Algorithms",
-    "Note/Native Deployment with AWS",
-    "Note",
     "Technical Resource/AI resume reviewer/attachments/gumball.jpeg",
     "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 3.png",
     "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 2.png",
-    "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 1.png",
-    "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled.png"
+    "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 1.png"
   ]
 }

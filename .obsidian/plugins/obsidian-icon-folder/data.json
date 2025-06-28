@@ -7,7 +7,9 @@
     "iconColor": null,
     "recentlyUsedIcons": [
       "🐋",
-      "LiLeaf"
+      "📚",
+      "LiAlarmClockCheck",
+      "LiCoffee"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -30,5 +32,8 @@
     "lucideIconPackType": "native",
     "debugMode": false,
     "useInternalPlugins": false
-  }
+  },
+  "Web Technical/Java/Java.md": "LiCoffee",
+  "Web Technical/Java/Java Learning Plan.md": "📚",
+  "Web Technical/Docker/Docker.md": "🐋"
 }

@@ -1,6 +1,7 @@
 [
   "obsidian-excalidraw-plugin",
-  "obsidian-git",
+  "obsidian-advanced-new-file",
+  "obsidian-prozen",
   "obsidian-icon-folder",
-  "obsidian-advanced-new-file"
+  "obsidian-git"
 ]
