@@ -1,6 +1,7 @@
 # Ignore only volatile or system-specific files
 .obsidian/cache/
 .obsidian/graph.json
+.obsidian/workspace.json
 
 # OS system files
 .DS_Store
@@ -15,5 +16,3 @@ Icon?
 *.log
 *.bak
 *.old
-
-/.obsidian/workspace.json
