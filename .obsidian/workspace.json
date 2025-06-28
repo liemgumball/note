@@ -30,8 +30,23 @@
               "icon": "lucide-file",
               "title": "Data types and variables"
             }
+          },
+          {
+            "id": "918c85d3915a6035",
+            "type": "leaf",
+            "state": {
+              "type": "diff-view",
+              "state": {
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
+              },
+              "icon": "git-pull-request",
+              "title": "Diff: workspace.json"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,12 +137,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web Technical/Java/Data types and variables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Data types and variables"
+              "title": "Outgoing links"
             }
           },
           {
@@ -161,13 +175,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web Technical/Java/Data types and variables.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Data types and variables"
+              "title": "Outline"
             }
           }
         ],
@@ -189,10 +202,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4fe07d8a4b5ef6f5",
+  "active": "918c85d3915a6035",
   "lastOpenFiles": [
-    "Web Technical/Java/Java.md",
+    "conflict-files-obsidian-git.md",
     "Web Technical/Java/Data types and variables.md",
+    "Web Technical/Java/Java.md",
     "Web Technical/Java/attachments/Pasted image 20250628104102.png",
     "Note/Native Deployment with AWS/Native Deployment with AWS.md",
     "Excalidraw/Drawing 2025-06-21 22.37.38.excalidraw.md",
@@ -221,7 +235,6 @@
     "Web Technical/React advanced.md",
     "Web Technical/Java",
     "Java.md",
-    "Web Technical/React/Thinking in React/Thinking in React.md",
     "Note/Front-end developer interview questions/attachments/Untitled.png",
     "Note/Data structures and Algorithms/attachments/Untitled 1.png",
     "Note/Data structures and Algorithms/attachments/Untitled.png",
