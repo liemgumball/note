@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Web Technical/Java/Java.md",
+                "file": "Web Technical/Java/Data types and variables.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Java"
+              "title": "Data types and variables"
             }
           }
         ]
@@ -88,8 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "8030fd83c7cd2f87",
@@ -123,12 +122,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Web Technical/Java/Java.md",
+                "file": "Web Technical/Java/Data types and variables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Java"
+              "title": "Outgoing links from Data types and variables"
             }
           },
           {
@@ -162,17 +161,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Web Technical/Java/Java.md",
+                "file": "Web Technical/Java/Data types and variables.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Java"
+              "title": "Outline of Data types and variables"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -190,10 +189,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ac937de819926647",
+  "active": "4fe07d8a4b5ef6f5",
   "lastOpenFiles": [
-    "Web Technical/Java/attachments/Pasted image 20250628104102.png",
     "Web Technical/Java/Java.md",
+    "Web Technical/Java/Data types and variables.md",
+    "Web Technical/Java/attachments/Pasted image 20250628104102.png",
     "Note/Native Deployment with AWS/Native Deployment with AWS.md",
     "Excalidraw/Drawing 2025-06-21 22.37.38.excalidraw.md",
     "Web Technical/Java/Java Learning Plan.md",
@@ -236,7 +236,6 @@
     "Note/Data structures and Algorithms",
     "Technical Resource/AI resume reviewer/attachments/gumball.jpeg",
     "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 3.png",
-    "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 2.png",
-    "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 1.png"
+    "Web Technical/React/Built-in React Hooks/Passing Data Deeply with Context/attachments/Untitled 2.png"
   ]
 }

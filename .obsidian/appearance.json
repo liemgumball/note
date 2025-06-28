@@ -3,5 +3,8 @@
   "cssTheme": "Atom",
   "accentColor": "#f38439",
   "baseFontSizeAction": true,
-  "baseFontSize": 16
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "CustomIcon-AutoGen"
+  ]
 }

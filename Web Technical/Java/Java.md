@@ -30,4 +30,30 @@ public class HelloWorld {
 - `public static void main(String[] args)` - This is the heart of the program, where the execution begins.
 # Basic literals
 Regardless of its complexity, a program always performs operations on numbers, strings, and other values. These values are called ==**literals**==.
-![[Pasted image 20250628104102.png|400]]
+![[Pasted image 20250628104102.png#center|400]]
+### Integer numbers
+```java
+int numApples = 1000;
+```
+We can increase code readability by dividing the digit into blocks with underscores: `1_000_000` is more readable than `1000000`.
+```java
+int numPackedApples = 1_000_000;
+```
+### Characters
+A character is a single symbol, denoted with ==single quotes==.
+```java
+char charOne = '1';
+int numOne = 1;
+```
+### Strings
+A string is a sequence of characters, encapsulated by ==double quotes==.
+A string consisting of a single character like `"A"` is also a valid string, but do not confuse it with the `'A'` character. Note the difference in quotes!
+```java
+char singleQuoted = 'A';
+String doubleQuoted = "A";
+```
+# Writing first Java program
+## Basic
+- The `public class`, it is the basic unit of a program. Every Java program must have at least one class. The definition of a class consists of the `class` keyword followed by the class name.
+- The ==main== method, to make the program ==runnable==, we put a method named `main` inside a class, otherwise, it will not run.
+![[Data types and variables]]
