@@ -15,11 +15,14 @@ Why we talk about React? (_this is to explain why we have a topic about React)_
 2. React is a rock start in web development! 🤩
     
     A bit about history ⇒ create by Facebook … (some images of core team members)
-    
-    > [!info] Technology | 2024 Stack Overflow Developer Survey  
-    > JavaScript has been a mainstay in the developer survey and on Stack Overflow since our first survey.  
-    > [https://survey.stackoverflow.co/2024/technology#1-web-frameworks-and-technologies](https://survey.stackoverflow.co/2024/technology#1-web-frameworks-and-technologies)  
-    
+
+> [!info] Technology | 2024 Stack Overflow Developer Survey
+> JavaScript has been a mainstay in the developer survey and on Stack Overflow since our first survey.  
+> [https://survey.stackoverflow.co/2024/technology#1-web-frameworks-and-technologies](https://survey.stackoverflow.co/2024/technology#1-web-frameworks-and-technologies)  
+
+> Contents
+
+
     Following the 2024 Stack Overflow survey, React has blown past ==**JQuery**== to become the most commonly used web framework 🤯
     
     ![[Web Technical/React 19/attachments/image.png]]
