@@ -56,4 +56,43 @@ String doubleQuoted = "A";
 ## Basic
 - The `public class`, it is the basic unit of a program. Every Java program must have at least one class. The definition of a class consists of the `class` keyword followed by the class name.
 - The ==main== method, to make the program ==runnable==, we put a method named `main` inside a class, otherwise, it will not run.
-![[Data types and variables]]
+## Data type and variable
+```java
+// structure
+DataType variableName = initialization;
+
+String language = "java";
+
+int numberOfApples = 5;
+```
+### Alternative form of declaring
+```java
+String language = "java", version = "8 or newer";
+```
+Creating 2 `String` variables.
+### Type inference
+Since **Java 10**, we can use `var` instead of a specific type to enforce type inference
+```java
+// structure
+var variableName = initialization;
+
+var language = "Java"; // String
+var version = 10; // int
+```
+## Java documentation comment
+The compiler ignores any text from `/**` to `*/` just like it ignores multi-line comments.
+These kinds of comments can be used to automatically generate documentation about your source code by using the **[javadoc](https://docs.oracle.com/javase/8/docs/technotes/tools/windows/javadoc.html)** tool.
+```java
+public class HelloWorld {
+/**
+* The main method is the entry point of the Java application.
+* It prints "Hello, World!" and a simple message to the console.
+*
+* @param args command line arguments (not used in this program)
+*/
+	public static void main(String[] args) {
+		System.out.println("Hello, World!");
+		System.out.println("This is a simple Java program.");
+	}
+}
+```
