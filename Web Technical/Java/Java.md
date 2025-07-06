@@ -96,3 +96,19 @@ public class HelloWorld {
 	}
 }
 ```
+## Reading input
+The simplest method to obtain data from the standard input is using the standard class `Scanner`. It allows a program to read values of various types, like strings or numbers, from the standard input.
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        sc.close();
+    }
+}
+```
+Set up the `Scanner` class and telling it to listen for answers from the keyboard (which is represented by `System.in`).
+
+> [!note] Using `Scanner`
+> When you use a `Scanner` in **Java**, it’s like opening a notebook to take notes or read from it. When you’re done using the notebook, you `.close()` it to keep things tidy and make sure it’s properly put away.
