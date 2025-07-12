@@ -112,3 +112,27 @@ Set up the `Scanner` class and telling it to listen for answers from the keyboar
 
 > [!note] Using `Scanner`
 > When you use a `Scanner` in **Java**, it’s like opening a notebook to take notes or read from it. When you’re done using the notebook, you `.close()` it to keep things tidy and make sure it’s properly put away.
+
+We can also read others data type.
+```java
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        double b = sc.nextDouble();
+        boolean c = sc.nextBoolean();
+        
+        sc.close();
+    }
+}
+```
+### Character Encoding in Scanner
+Starting with **Java 18**, the default character encoding used by `Scanner` and other Java APIs is `UTF-8`.
+
+Previously, **Java** relied on the platform’s default charset, which varied depending on the system locale and operating system (e.g., Windows might use `Cp1252`, Linux might use `UTF-8`, etc.).
+
+This inconsistency often led to subtle bugs, especially when handling special characters, accented letters, or non-Latin alphabets. `UTF-8` ensures that characters like `é`, `ö`, or `你好` are read and interpreted correctly across all platforms.
+
+> [!NOTE] 
+> Keep in mind that programs running on older **Java** versions (before 18) might behave differently depending on the environment.
+
