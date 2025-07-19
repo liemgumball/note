@@ -82,5 +82,5 @@ Calming gradient (blue → purple) with abstract wave patterns.
 ----
 # TODO
 1. Setup channel
-	- [ ] Generate image and banner
+	- [x] Generate image and banner ^m7ct
 	- [ ] Research of how to make a video
