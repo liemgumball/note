@@ -28,9 +28,43 @@ public class HelloWorld {
 
 - `public class HelloWorld` - In **Java**, all the code you write will be inside classes. Every Java application has to have at least one class.
 - `public static void main(String[] args)` - This is the heart of the program, where the execution begins.
+# Java Compiler `javac`
+![[Java 2025-10-12 12.51.00.excalidraw|800]]
+```bash
+pwd
+# --> /learning/basic/
+
+javac Main.java
+
+ls .
+# --> Main.class  HelloWorld.java
+```
+# Java Runtime Environment "JRE"
+
+![[Java 2025-10-12 13.09.27.excalidraw|800]]
+```bash
+pwd
+# --> /
+
+java learning.basic.HelloWorld
+# --> Hello world!
+
+```
 # Basic literals
 Regardless of its complexity, a program always performs operations on numbers, strings, and other values. These values are called ==**literals**==.
 ![[Pasted image 20250628104102.png#center|400]]
+
+| Type    | Bytes | Range          |
+| ------- | ----- | -------------- |
+| byte    | 1     | [-128,127]     |
+| short   | 2     | [-32K,32K]     |
+| int     | 4     | [-2B,2B]       |
+| long    | 8     |                |
+| float   | 4     |                |
+| double  | 8     |                |
+| char    | 2     | A,B,C...       |
+| boolean | 1     | `true`/`false` |
+
 ### Integer numbers
 ```java
 int numApples = 1000;
@@ -38,6 +72,7 @@ int numApples = 1000;
 We can increase code readability by dividing the digit into blocks with underscores: `1_000_000` is more readable than `1000000`.
 ```java
 int numPackedApples = 1_000_000;
+double packagePrice = 12.99;
 ```
 ### Characters
 A character is a single symbol, denoted with ==single quotes==.
@@ -52,10 +87,21 @@ A string consisting of a single character like `"A"` is also a valid string, but
 char singleQuoted = 'A';
 String doubleQuoted = "A";
 ```
+### Long
+If a number is too big to be an `int`, use `long` instead:
+```java
+long numberApples = 1_234_567_890L;
+```
+The character `L` or `l` at the end indicates is a `long` number. If we define the number without the it, the compiler will understand it as an `int` and the compiler with show an error.
+### Float
+Same with `float`, usually, `double` is the main type, so the letter `F` or `f` at the end indicate the number is a `float` number:
+```java
+float packagePrice = 12.99F;
+```
 # Writing first Java program
 ## Basic
 - The `public class`, it is the basic unit of a program. Every Java program must have at least one class. The definition of a class consists of the `class` keyword followed by the class name.
-- The ==main== method, to make the program ==runnable==, we put a method named `main` inside a class, otherwise, it will not run.
+- The ==main== method, to make the program ==executable==, we put a method named `main` inside a class, otherwise, it will not run.
 ## Data type and variable
 ```java
 // structure
@@ -137,25 +183,4 @@ This inconsistency often led to subtle bugs, especially when handling special ch
 > Keep in mind that programs running on older **Java** versions (before 18) might behave differently depending on the environment.
 
 ----
-# Java Compiler `javac`
-![[Java 2025-10-12 12.51.00.excalidraw|800]]
-```bash
-pwd
-# --> /learning/basic/
-
-javac Main.java
-
-ls .
-# --> Main.class  HelloWorld.java
-```
-# Java Runtime Environment "JRE"
-
-![[Java 2025-10-12 13.09.27.excalidraw|800]]
-```bash
-pwd
-# --> /
-
-java learning.basic.HelloWorld
-# --> Hello world!
-
-```
+# Reference types
