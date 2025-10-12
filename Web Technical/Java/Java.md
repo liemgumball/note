@@ -86,6 +86,8 @@ A string consisting of a single character like `"A"` is also a valid string, but
 ```java
 char singleQuoted = 'A';
 String doubleQuoted = "A";
+// or
+String doudleQuoted2 = new String("A");
 ```
 ### Long
 If a number is too big to be an `int`, use `long` instead:
@@ -184,3 +186,16 @@ This inconsistency often led to subtle bugs, especially when handling special ch
 
 ----
 # Reference types
+Not like **javascript**'s non-primitive types (`object` `array`). Non-primitive types in **java** basically are instance of *class*. However, the logic behind is a kind of like **javascript**.
+```java
+// ...
+	Point point1 = new Point(1,2);
+	Point point2 = point1;
+	point1.x = 2;
+	
+	System.out.print(point2.x);
+	// --> 2
+// ...
+```
+![[Java 2025-10-12 16.49.25.excalidraw|800]]
+# Casting
