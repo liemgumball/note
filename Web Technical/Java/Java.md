@@ -136,3 +136,7 @@ This inconsistency often led to subtle bugs, especially when handling special ch
 > [!NOTE] 
 > Keep in mind that programs running on older **Java** versions (before 18) might behave differently depending on the environment.
 
+----
+# Java Compiler
+Java compiler (aka Javac)
+![[Java 2025-10-12 12.51.00.excalidraw]]
