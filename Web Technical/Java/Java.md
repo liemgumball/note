@@ -137,6 +137,25 @@ This inconsistency often led to subtle bugs, especially when handling special ch
 > Keep in mind that programs running on older **Java** versions (before 18) might behave differently depending on the environment.
 
 ----
-# Java Compiler
-Java compiler (aka Javac)
-![[Java 2025-10-12 12.51.00.excalidraw]]
+# Java Compiler `javac`
+![[Java 2025-10-12 12.51.00.excalidraw|800]]
+```bash
+pwd
+# --> /learning/basic/
+
+javac Main.java
+
+ls .
+# --> Main.class  HelloWorld.java
+```
+# Java Runtime Environment "JRE"
+
+![[Java 2025-10-12 13.09.27.excalidraw|800]]
+```bash
+pwd
+# --> /
+
+java learning.basic.HelloWorld
+# --> Hello world!
+
+```
