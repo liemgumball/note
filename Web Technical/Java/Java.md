@@ -7,6 +7,7 @@ Type: Backend
 Materials:
   - https://www.youtube.com/watch?v=xk4_1vDrzzo 
   - "[[Java Learning Plan]]"
+  - https://youtu.be/eIrMbAQSU34
 ---
 # What is Java
 Java is high-level, class-based, object-oriented programming language.
@@ -199,3 +200,30 @@ Not like **javascript**'s non-primitive types (`object` `array`). Non-primitive 
 ```
 ![[Java 2025-10-12 16.49.25.excalidraw|800]]
 # Casting
+Type in  **Java** is very important. A regular number like `8` is infer as `int`, and if we want to create a `float` number from it, type casting will help.
+```java
+float x = (float)10 / (float)3;
+```
+
+> [!IMPORTANT] Implicit casting
+> Type casting can be applied automatically, but there is a *rule of bytes*.
+> ```java
+>
+> short x = 1;
+> int y = x + 2;
+> 
+> ```
+> The above code is valid, because `short` is 1 byte, `int` uses 2 byte.  If we do the opposite way, the compiler will show an error.
+> The order: `byte` > `short` > `int` > `long` > `float` > `double`
+
+# Number Format
+```java
+java.text.NumberFormat
+
+// ...
+NumberFormat currency = NumberFormat.getCurrencyInstance();
+System.out.print(currency.format(123456.789))
+
+// --> 123,456.789
+```
+
