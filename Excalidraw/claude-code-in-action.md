@@ -220,3 +220,223 @@ When the issue is created → GitHub fires the event → Runner VM spins up → 
 **Required secrets:**
 - `ANTHROPIC_API_KEY` — authenticates Claude Code
 - `GITHUB_TOKEN` — lets Claude push branches and open PRs (auto-provided by GitHub)
+
+---
+
+## Hooks
+
+**What it does:** Hooks let you run your own shell commands automatically at specific points in Claude Code's lifecycle — before or after Claude takes an action. Think of them as event listeners for Claude's behaviour.
+![[Pasted image 20260325215354.png]]
+
+**Why it's useful:**
+- Enforce team rules automatically (e.g. always run linter after edits)
+- Log or audit what Claude does
+- Block unsafe actions before they happen
+- Trigger notifications or side-effects on tool use
+
+Hooks are defined in `settings.local.json` under a `"hooks"` key.
+
+---
+
+### Hook Matchers
+
+The `matcher` field targets a specific Claude Code tool by name. Each hook entry fires only when that tool is invoked.
+
+| Matcher | Tool it targets | Common use |
+|---|---|---|
+| `*` | All tools (wildcard) | Global audit logging |
+| `Bash` | Shell command execution | Block dangerous commands, log all shell activity |
+| `ReadFile` | Reading file contents | Block access to secrets (`.env`, key files) |
+| `WriteFile` | Writing/creating files | Validate content before saving, log writes |
+| `Edit` | Editing existing files | Auto-format after edits, enforce style rules |
+| `MultiEdit` | Multiple edits in one call | Same as Edit but for batch changes |
+| `Glob` | File pattern search | Restrict which directories Claude can scan |
+| `Grep` | Searching file contents | Log what Claude is searching for |
+| `WebFetch` | Fetching a URL | Block external requests, log web access |
+| `WebSearch` | Web search queries | Restrict or log search queries |
+| `Task` | Spawning a subagent | Audit or limit parallel agent usage |
+| `TodoWrite` | Writing the todo list | Log task planning |
+| `NotebookEdit` | Editing Jupyter notebooks | Validate notebook cell changes |
+
+> Matchers are **case-sensitive** and must match the exact tool name. Use `"*"` to catch every tool call in one hook.
+
+---
+
+### Type 1: `PreToolUse`
+
+Runs **before** Claude executes a tool. You can use it to inspect, log, or **block** the action entirely.
+
+If your command exits with code `2`, Claude cancels the tool call and shows your output as the reason.
+
+**Example — block Claude from reading `.env` files:**
+
+```json
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "ReadFile",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "if echo \"$CLAUDE_TOOL_INPUT\" | grep -q '\\.env'; then echo 'Reading .env files is not allowed'; exit 2; fi"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+**Example — log every file write:**
+
+```json
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "WriteFile",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"[$(date)] WriteFile: $CLAUDE_TOOL_INPUT\" >> ~/claude-audit.log"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+---
+
+### Type 2: `PostToolUse`
+
+Runs **after** Claude finishes executing a tool. Use it to react to what Claude just did — run a formatter, notify, validate, etc.
+
+Claude receives your command's output and can use it to decide next steps.
+
+**Example — auto-format after every file edit:**
+
+```json
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "WriteFile",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "prettier --write \"$(echo $CLAUDE_TOOL_RESULT | jq -r '.path')\" 2>&1"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+**Example — run tests after any Bash command:**
+
+```json
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npm test --silent 2>&1 | tail -5"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+---
+
+### Type 3: `Notification`
+
+Runs when Claude Code sends a **notification** to the user — typically at the end of a long task or when it needs your attention. Use it to route notifications to wherever suits you (Slack, terminal bell, custom sound, etc.).
+
+Does **not** use a `matcher` field — it fires on all notification events.
+
+**Example — send a Slack message when Claude finishes a task:**
+
+```json
+{
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "curl -s -X POST $SLACK_WEBHOOK_URL -d \"{\\\"text\\\": \\\"Claude Code: $CLAUDE_NOTIFICATION_MESSAGE\\\"}\" > /dev/null"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+**Example — play a sound when Claude finishes:**
+
+```json
+{
+  "hooks": {
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Glass.aiff"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+---
+
+### Type 4: `Stop`
+
+Runs when Claude Code **fully stops** — after it has finished its entire response and all tool use. This is the very end of a Claude turn.
+
+Use it for final cleanup, summary logging, or sending a "done" signal to another system.
+
+**Example — log a completion timestamp:**
+
+```json
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"[$(date)] Claude session ended\" >> ~/claude-sessions.log"
+          }
+        ]
+      }
+    ]
+  }
+}
+```
+
+---
+
+### Summary
+
+| | `PreToolUse` | `PostToolUse` | `Notification` | `Stop` |
+|---|---|---|---|---|
+| **When it runs** | Before a tool is used | After a tool is used | When Claude sends a notification | When Claude fully stops |
+| **Can block action?** | Yes — exit code `2` | No | No | No |
+| **Uses `matcher`?** | Yes | Yes | No | No |
+| **Use for** | Validation, blocking | Formatting, testing | Custom alerts, Slack, sounds | Cleanup, final logging |
+| **Env variable** | `$CLAUDE_TOOL_INPUT` | `$CLAUDE_TOOL_RESULT` | `$CLAUDE_NOTIFICATION_MESSAGE` | — |
