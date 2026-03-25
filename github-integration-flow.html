@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GitHub Integration – Behind the Scenes</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      padding: 40px 24px;
+      min-height: 100vh;
+    }
+    h1 {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      color: #f0f6fc;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 13px;
+      color: #8b949e;
+      margin-bottom: 40px;
+    }
+
+    /* ── Two-column layout ── */
+    .layout {
+      display: flex;
+      gap: 32px;
+      max-width: 1100px;
+      margin: 0 auto;
+      align-items: flex-start;
+    }
+    .flow-col { flex: 1; min-width: 0; }
+    .qa-col { width: 340px; flex-shrink: 0; }
+
+    /* ── Section headings ── */
+    .section-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #8b949e;
+      margin-bottom: 16px;
+    }
+
+    /* ── Steps ── */
+    .step {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 4px;
+      position: relative;
+    }
+    .step-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+      width: 36px;
+    }
+    .step-number {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      flex-shrink: 0;
+      border: 2px solid;
+    }
+    .step-line {
+      width: 2px;
+      flex: 1;
+      min-height: 24px;
+      margin-top: 4px;
+      border-radius: 1px;
+    }
+    .step-body {
+      padding-bottom: 28px;
+      flex: 1;
+      min-width: 0;
+    }
+    .step-body h3 {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      line-height: 1.4;
+    }
+    .step-body p {
+      font-size: 12.5px;
+      color: #8b949e;
+      line-height: 1.6;
+    }
+    .step-body code {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 4px;
+      padding: 1px 5px;
+      font-size: 11.5px;
+      color: #79c0ff;
+      font-family: "SFMono-Regular", Consolas, monospace;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      padding: 2px 7px;
+      border-radius: 10px;
+      margin-bottom: 5px;
+      letter-spacing: 0.04em;
+    }
+
+    /* colour themes per actor */
+    .user    { --c: #58a6ff; --bg: #1f3a5f; }
+    .github  { --c: #3fb950; --bg: #1a3328; }
+    .runner  { --c: #d2a8ff; --bg: #2d1f4e; }
+    .claude  { --c: #ffa657; --bg: #3d2607; }
+
+    .step-number { color: var(--c); border-color: var(--c); background: var(--bg); }
+    .step-line   { background: var(--c); opacity: 0.25; }
+    .tag         { color: var(--c); background: var(--bg); }
+    .step-body h3 { color: var(--c); }
+
+    /* ── Q&A cards ── */
+    .qa-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    .qa-card .q {
+      font-size: 12px;
+      font-weight: 700;
+      color: #f0f6fc;
+      margin-bottom: 10px;
+      display: flex;
+      gap: 8px;
+      align-items: flex-start;
+    }
+    .qa-card .q .num {
+      background: #21262d;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 11px;
+      color: #8b949e;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .qa-card .a {
+      font-size: 12.5px;
+      color: #8b949e;
+      line-height: 1.7;
+    }
+    .qa-card .a strong { color: #e6edf3; }
+    .qa-card .a code {
+      background: #0d1117;
+      border: 1px solid #30363d;
+      border-radius: 4px;
+      padding: 1px 5px;
+      font-size: 11px;
+      color: #79c0ff;
+      font-family: monospace;
+    }
+    .highlight-box {
+      background: #1c2a1e;
+      border: 1px solid #3fb950;
+      border-radius: 6px;
+      padding: 10px 12px;
+      margin-top: 10px;
+      font-size: 12px;
+      color: #3fb950;
+      line-height: 1.6;
+    }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+      justify-content: center;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: #8b949e;
+    }
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+<h1>GitHub Integration — Behind the Scenes</h1>
+<p class="subtitle">How "Customizing the Workflows" works step by step</p>
+
+<div class="legend">
+  <div class="legend-item"><div class="legend-dot" style="background:#58a6ff"></div> User / GitHub UI</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#3fb950"></div> GitHub Platform</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#d2a8ff"></div> GitHub Actions Runner (VM)</div>
+  <div class="legend-item"><div class="legend-dot" style="background:#ffa657"></div> Claude Code</div>
+</div>
+
+<div class="layout">
+
+  <!-- LEFT: step flow -->
+  <div class="flow-col">
+    <div class="section-title">Step-by-step flow</div>
+
+    <div class="step user">
+      <div class="step-left"><div class="step-number">1</div><div class="step-line"></div></div>
+      <div class="step-body">
+        <div class="tag">User</div>
+        <h3>User opens a GitHub Issue</h3>
+        <p>A developer writes an issue like <em>"Fix the login bug — users can't reset password"</em> and tags <code>@claude</code> in the body or comment. This is the trigger.</p>
+      </div>
+    </div>
+
+    <div class="step github">
+      <div class="step-left"><div class="step-number">2</div><div class="step-line"></div></div>
+      <div class="step-body">
+        <div class="tag">GitHub</div>
+        <h3>GitHub fires an <code>issues</code> webhook event</h3>
+        <p>GitHub detects the issue was created/commented on and emits an event. This event is picked up by the GitHub Actions workflow configured in the repo (e.g. <code>.github/workflows/claude.yml</code>).</p>
+      </div>
+    </div>
+
+    <div class="step runner">
+      <div class="step-left"><div class="step-number">3</div><div class="step-line"></div></div>
+      <div class="step-body">
+        <div class="tag">Runner</div>
+        <h3>GitHub spins up a fresh Actions Runner VM</h3>
+        <p>GitHub provisions a temporary Ubuntu virtual machine on <strong>GitHub's cloud infrastructure</strong>. This is an ephemeral, isolated environment — it exists only for this job run, then gets destroyed.</p>
+      </div>
+    </div>
+
+    <div class="step runner">
+      <div class="step-left"><div class="step-number">4</div><div class="step-line"></div></div>
+      <div class="step-body">
+        <div class="tag">Runner</div>
+        <h3>Runner checks out the repository</h3>
+        <p>The workflow runs <code>actions/checkout</code>, cloning the full repo into the runner's filesystem. Claude Code will use these files as its working directory.</p>
+      </div>
+    </div>
+
+    <div class="step claude">
+      <div class="step-left"><div class="step-number">5</div><div class="step-line"></div></div>
+      <div class="step-body">
+        <div class="tag">Claude Code</div>
+        <h3>Claude Code is invoked inside the Runner</h3>
+        <p>The workflow calls the <code>anthropics/claude-code-action</code> GitHub Action, passing it the issue title and body as the prompt. Claude Code starts running <strong>inside the Runner VM</strong> using your <code>ANTHROPIC_API_KEY</code> secret.</p>
+      </div>
+    </div>
+
+    <div class="step claude">
+      <div class="step-left"><div class="step-number">6</div><div class="step-line"></div></div>
+      <div class="step-body">
+        <div class="tag">Claude Code</div>
+        <h3>Claude reads the codebase &amp; reasons about a fix</h3>
+        <p>Claude Code uses its tools — <code>ReadFile</code>, <code>Glob</code>, <code>Grep</code> — to navigate the repo, understand the code, and plan a fix based on the issue description.</p>
+      </div>
+    </div>
+
+    <div class="step claude">
+      <div class="step-left"><div class="step-number">7</div><div class="step-line"></div></div>
+      <div class="step-body">
+        <div class="tag">Claude Code</div>
+        <h3>Claude makes code changes</h3>
+        <p>Claude edits files directly on the Runner's filesystem using its <code>WriteFile</code> / <code>Edit</code> tools — the same repo it checked out in step 4.</p>
+      </div>
+    </div>
+
+    <div class="step runner">
+      <div class="step-left"><div class="step-number">8</div><div class="step-line"></div></div>
+      <div class="step-body">
+        <div class="tag">Runner</div>
+        <h3>Tests run inside the Runner VM</h3>
+        <p>Claude runs the test suite (e.g. <code>npm test</code> or <code>pytest</code>) via <code>Bash</code> — still inside the same Runner VM. The app is <strong>not deployed anywhere</strong>; it runs locally inside this temporary VM.</p>
+      </div>
+    </div>
+
+    <div class="step github">
+      <div class="step-left"><div class="step-number">9</div><div class="step-line"></div></div>
+      <div class="step-body">
+        <div class="tag">GitHub</div>
+        <h3>Claude opens a Pull Request</h3>
+        <p>Claude commits its changes and uses the GitHub API (via the provided <code>GITHUB_TOKEN</code>) to push a branch and open a PR — referencing the original issue. The Runner VM is then destroyed.</p>
+      </div>
+    </div>
+
+    <div class="step user">
+      <div class="step-left"><div class="step-number">10</div></div>
+      <div class="step-body">
+        <div class="tag">User</div>
+        <h3>Developer reviews &amp; merges the PR</h3>
+        <p>The PR appears in GitHub for a human to review, request changes, or approve. Claude may also comment on the issue to summarise what it did.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- RIGHT: Q&A -->
+  <div class="qa-col">
+    <div class="section-title">Your questions answered</div>
+
+    <div class="qa-card">
+      <div class="q"><span class="num">Q1</span> Where does the app run when <code>@claude</code> tests it?</div>
+      <div class="a">
+        The app runs <strong>inside the GitHub Actions Runner</strong> — a temporary Ubuntu VM hosted on <strong>GitHub's cloud servers</strong>.
+        <div class="highlight-box">
+          ✗ Not your local machine<br>
+          ✗ Not Anthropic's servers<br>
+          ✓ GitHub's ephemeral cloud VM
+        </div>
+        Claude installs dependencies and runs the tests (<code>npm test</code>, <code>pytest</code>, etc.) directly in that VM's shell. The VM is destroyed after the job completes.
+      </div>
+    </div>
+
+    <div class="qa-card">
+      <div class="q"><span class="num">Q2</span> How does the GitHub Action run when a user creates an issue?</div>
+      <div class="a">
+        The workflow file (<code>.github/workflows/claude.yml</code>) is configured to trigger on the <code>issues</code> event:
+        <br><br>
+        <code>on: issues: types: [opened]</code>
+        <br><br>
+        When a new issue is created, GitHub fires this event → the Actions workflow starts → the Runner VM spins up → Claude Code is invoked with the issue text as its prompt → it works autonomously and opens a PR.
+        <br><br>
+        <strong>Required secrets in the repo:</strong><br>
+        • <code>ANTHROPIC_API_KEY</code> — authenticates Claude<br>
+        • <code>GITHUB_TOKEN</code> — lets Claude push branches &amp; open PRs (provided automatically by GitHub)
+      </div>
+    </div>
+
+    <div class="qa-card" style="border-color:#ffa65740;">
+      <div class="q" style="color:#ffa657;">Key insight</div>
+      <div class="a">
+        Claude Code in GitHub Actions is just Claude Code running in a CI environment — the same tool you use locally, but triggered by GitHub events and running in GitHub's cloud instead of your terminal.
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

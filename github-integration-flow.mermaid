@@ -1,0 +1,25 @@
+sequenceDiagram
+    actor User
+    participant GH as GitHub
+    participant Actions as GitHub Actions
+    participant Runner as Runner VM<br/>(GitHub Cloud)
+    participant Claude as Claude Code
+
+    User->>GH: Creates Issue & tags @claude
+    GH->>Actions: Fires `issues` webhook event
+    Actions->>Runner: Provisions ephemeral Ubuntu VM
+    Runner->>Runner: Checks out repository (actions/checkout)
+    Runner->>Claude: Invokes claude-code-action<br/>with issue text as prompt
+    Note over Claude: Authenticated via<br/>ANTHROPIC_API_KEY
+
+    loop Agentic loop
+        Claude->>Runner: ReadFile / Grep / Glob<br/>(explores codebase)
+        Claude->>Runner: WriteFile / Edit<br/>(makes code changes)
+        Claude->>Runner: Bash — runs tests<br/>(npm test / pytest)
+        Runner-->>Claude: Test results
+    end
+
+    Claude->>GH: Opens Pull Request<br/>via GITHUB_TOKEN
+    GH-->>User: Notifies: PR is ready for review
+    User->>GH: Reviews & merges PR
+    Actions->>Runner: Destroys VM
