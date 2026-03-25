@@ -184,9 +184,10 @@ Here is how you can do it:
 
 ## GitHub Integration — Behind the Scenes
 
-> 📊 See the full visual: [github-integration-flow.html](./github-integration-flow.html)
-> 🔷 Sequence diagram: [github-integration-flow.mermaid](./github-integration-flow.mermaid)
+> 📊 See the full visual: [github-integration-flow.html](github-integration-flow.html)
+> 🔷 Sequence diagram: [github-integration-flow.mermaid](github-integration-flow.mermaid)
 
+![[github-integration-flow.excalidraw]]
 ### How it works (step by step)
 
 1. **User creates a GitHub Issue** and tags `@claude` in the body
