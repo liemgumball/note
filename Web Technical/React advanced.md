@@ -11,7 +11,7 @@ Edited: 2025-05-10T14:46
 ---
 > [!important] In this note, we’ll go through the
 > 
-> _Advanced guides_ in ==**React**==
+> _Advanced guides_ in ==**[[React]]==**
 
 ## Accessibility
 
@@ -219,7 +219,7 @@ const App = () => (
 
 ## Error Boundaries
 
-Error boundaries are ==**React components**== that ==_**catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI**_== instead of the component tree that crashed. Error boundaries catch errors during ==rendering==, in ==lifecycle methods==, and in ==constructors of the whole tree below them==
+Error boundaries are ==**React components**== that ==_**catch [[JavaScript]] errors anywhere in their child component tree, log those errors, and display a fallback UI**_== instead of the component tree that crashed. Error boundaries catch errors during ==rendering==, in ==lifecycle methods==, and in ==constructors of the whole tree below them==
 
 > [!info] Component – React  
 > The library for web and native user interfaces  
@@ -413,3 +413,11 @@ export default defineConfig({
 ```TypeScript
 import '@testing-library/jest-dom'
 ```
+
+## Related
+
+- [[React]] - Core React documentation
+- [[JavaScript]] - Language fundamentals
+- [[React 19]] - Latest React version updates
+- [[Built-in React Hooks]] - React hooks reference
+- [[TypeScript]] - Type-safe React development

@@ -117,3 +117,9 @@ print(response)
 ```Shell
 pip install drf-yasg
 ```
+
+## Related
+
+- [[NodeJS]] - Alternative server-side runtime
+- [[Working with SQL databases]] - SQL database concepts
+- [[Working with NoSQL databases]] - NoSQL database concepts

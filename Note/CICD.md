@@ -2,9 +2,9 @@
 Created by: liemgumball
 Created time: 2024-08-04T17:42
 ---
-# Dockerfile
+# [[Docker|Dockerfile]]
 
-1. Sử dụng node version 18
+1. Sử dụng [[NodeJS|node]] version 18
 2. working directory bên trong image
 3. copy các file package.json và package.lock.jsọn vào working directory
 4. chạy npm installl để tải module
@@ -29,3 +29,8 @@ Created time: 2024-08-04T17:42
 # Giải thích truyền biến
 
 khi run container thì thêm flag —env-file và đừng dẫn tới file chứa biến môi trường
+
+## Related
+
+- [[Docker]]
+- [[NodeJS]]

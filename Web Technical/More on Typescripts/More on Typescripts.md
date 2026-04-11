@@ -5,6 +5,8 @@ Type: Front-end
 Reviewed: false
 Edited: 2024-12-03T11:29
 ---
+This note covers advanced [[TypeScript]] topics including generics, narrowing, and conditional types.
+
 # Generics
 
 > [!important] **Generics**
@@ -408,3 +410,9 @@ const dynamicallyTyped: TypeFromReturn = 1;
 // number from 'T'
 type TypeFromReturn2 = GetReturnedType<number>;
 ```
+
+## Related
+- [[TypeScript]]
+- [[JavaScript]]
+- [[Narrowing]]
+- [[Utility Types]]

@@ -7,6 +7,7 @@ It’s syntactic sugar for attaching **metadata** or **enhancing behavior**.
 > [!important] Think of it like a wrapper or a modifier that adds extra logic to whatever it decorates.
 
 ```TypeScript
+// [[TypeScript]] decorator example
 function Logger(constructor: Function) {
   console.log("Class created:", constructor.name);
 }
@@ -51,7 +52,7 @@ class Example {}
 console.log(Reflect.getMetadata('custom:data', Example)); // "hello"
 ```
 
-Frameworks like **NestJS** use this kind of technique to:
+Frameworks like **[[NestJS]]** use this kind of technique to:
 
 - Know what services to inject
 - Enforce guards/roles
@@ -92,3 +93,8 @@ Call add with [2, 3]
 - It can **add, modify, or replace behavior**, or **attach metadata** to elements.
 - **NestJS** and others build on this to create elegant patterns for DI, routing, auth, etc.
 - Under the hood, it's just **JavaScript functions working with objects, functions, and metadata**.
+
+## Related
+
+- [[NestJS]]
+- [[TypeScript]]

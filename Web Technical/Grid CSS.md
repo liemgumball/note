@@ -103,3 +103,8 @@ Edited: 2025-05-10T14:45
 |grid-template-columns|Specifies the size of the columns, and how many columns in a grid layout|
 |grid-template-rows|Specifies the size of the rows in a grid layout|
 |row-gap|Specifies the gap between the grid rows|
+
+## Related
+
+- [[Responsive web design]] - Using Grid for responsive layouts
+- [[HTML-CSS training]] - CSS fundamentals

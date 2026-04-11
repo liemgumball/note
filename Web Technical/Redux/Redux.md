@@ -9,7 +9,7 @@ Edited: 2024-12-03T11:15
 ---
 > [!important] ==**Redux**==
 > 
-> is a ==**JS**== library for predictable and maintainable global state management.
+> is a ==**[[JavaScript]]**== library for predictable and maintainable global state management.
 
 It helps you write applications that behave consistently, run in different environments _(client, server, and native)_, and are easy to test.
 
@@ -127,3 +127,9 @@ npx degit reduxjs/redux-templates/packages/vite-template-redux my-app
 > [!info] Style Guide | Redux  
 > Redux Style Guide: recommended patterns and best practices for using Redux  
 > [https://redux.js.org/style-guide/](https://redux.js.org/style-guide/)
+
+## Related
+- [[React]]
+- [[JavaScript]]
+- [[Redux Saga]]
+- [[State and Lifecycle]]

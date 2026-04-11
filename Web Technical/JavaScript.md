@@ -1023,7 +1023,7 @@ flavio.hello() //Hello, I am a Person. I am also a programmer.
     > [!important] The callback function is executed asynchronously.
     > 
     >   
-    > This is a very common pattern when working with the file system, the network, events, or the DOM in the browser.  
+    > This is a very common pattern when working with the file system, the network, events, or the [[DOM]] in the browser.  
     
       
     
@@ -1355,3 +1355,11 @@ Putting your scripts at the bottom of the page body lets the browser load the pa
 > [!info] GitHub - TobitSoftware/react-project-guideline: Defines a consistent structure for React projects.  
 > Defines a consistent structure for React projects.  
 > [https://github.com/TobitSoftware/react-project-guideline#naming-conventions](https://github.com/TobitSoftware/react-project-guideline#naming-conventions)
+
+## Related
+
+- [[ES5 vs ES6]] - ECMAScript version differences
+- [[TypeScript]] - Typed superset of JavaScript
+- [[NodeJS]] - Server-side JavaScript runtime
+- [[React]] - UI library built on JavaScript
+- [[DOM]] - Browser document object model

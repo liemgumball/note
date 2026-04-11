@@ -1,4 +1,4 @@
-**_Hooks_** let you use different ==**React**== features from your components. You can either use the ==built-in Hooks== or combine them to ==build your own==
+**_Hooks_** let you use different ==**[[React]]**== features from your components. You can either use the ==built-in Hooks== or combine them to ==build your own==
 
 # Rules of Hooks
 
@@ -177,3 +177,9 @@ However, wherever we write an ==**Effect**==, consider whether it would be clear
 > _We shouldn’t need Effects very often_
 
 So if we’re writing one, its mean that we need to **==_step outside React_==** to synchronize with some external system.
+
+## Related
+- [[React]]
+- [[State and Lifecycle]]
+- [[Synchronizing with Effects]]
+- [[Passing Data Deeply with Context]]

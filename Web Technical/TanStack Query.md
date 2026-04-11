@@ -11,7 +11,7 @@ Edited: 2025-05-10T14:46
 
 > [!important] **==React Query==**
 > 
-> is often described as the missing data-fetching library for ==**React**==, but in more technical terms, it makes `_**fetching**_`**,** `_**caching**_`**,** `_**synchronizing**_` **and** `**u**``_**pdating server state**_` in your React applications a breeze.
+> is often described as the missing data-fetching library for ==**[[React]]**==, but in more technical terms, it makes `_**fetching**_`**,** `_**caching**_`**,** `_**synchronizing**_` **and** `**u**``_**pdating server state**_` in your React applications a breeze.
 
   
 
@@ -465,3 +465,9 @@ const mutation = useMutation(addTodo, {
   },
 })
 ```
+
+## Related
+- [[React]]
+- [[JavaScript]]
+- [[Built-in React Hooks]]
+- [[State and Lifecycle]]

@@ -532,3 +532,8 @@ Setup SSH key at company’s computer
 11. List HTML validation tool you know?
     - [W3C Markup Validation Service](https://validator.w3.org/)
     - [HTML5 Validator](https://html5.validator.nu/)
+
+## Related
+
+- [[Git begin]]
+- [[JavaScript]]

@@ -1,6 +1,6 @@
 Some components need to synchronize with external systems.
 
-==_Effects_== let you run some code after rendering so that you can synchronize your component with some system outside of **==React==**.
+==_Effects_== let you run some code after rendering so that you can synchronize your component with some system outside of **==[[React]]==**.
 
 > [!info] useEffect – React  
 > The library for web and native user interfaces  
@@ -61,3 +61,8 @@ We can take a look of these example with `useEffect`
 > [!info] useEffect – React  
 > The library for web and native user interfaces  
 > [https://react.dev/reference/react/useEffect#examples-connecting](https://react.dev/reference/react/useEffect#examples-connecting)
+
+## Related
+- [[React]]
+- [[Built-in React Hooks]]
+- [[DOM]]

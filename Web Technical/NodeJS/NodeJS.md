@@ -12,7 +12,7 @@ Edited: 2025-05-10T14:46
 
 - An open source server enviroment
 - Runs on various platforms (Windows, Linux, Unix, Mac OS…)
-- Uses JavaScript on the server
+- Uses [[JavaScript]] on the server
 
 ---
 

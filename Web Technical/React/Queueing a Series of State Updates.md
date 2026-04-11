@@ -1,4 +1,4 @@
-Setting a state variable will ==queue== another render. But sometimes you might want to perform multiple operations on the value ==before queueing the next render==. To do this, it helps to understand how React ==_batches_== state updates.
+Setting a state variable will ==queue== another render. But sometimes you might want to perform multiple operations on the value ==before queueing the next render==. To do this, it helps to understand how [[React]] ==_batches_== state updates.
 
   
 
@@ -43,4 +43,9 @@ This lets you update multiple state variables—even from multiple components—
 > 
 > ==uncommon== use case, we can pass a _function_ that calculates the next state based on the previous one in the queue, like `setNumber(n => n + 1)`
 
-It is a way to tell React to _“do something with the state value”_ ==instead== of just replacing it.
+It is a way to tell React to _”do something with the state value”_ ==instead== of just replacing it.
+
+## Related
+- [[React]]
+- [[State and Lifecycle]]
+- [[Re-rendering and Commit]]

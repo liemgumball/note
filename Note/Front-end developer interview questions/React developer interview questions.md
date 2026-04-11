@@ -8,7 +8,7 @@ tags:
 ---
 # What is React JS?
 
-==**React**== is a component-based **JavaScript** library used to build reusable components for the view layer in ==**MVC**== architecture
+==**[[React]]**== is a component-based **[[JavaScript]]** library used to build reusable components for the view layer in ==**MVC**== architecture
 
 > [!important] ==**MVC**==
 > 
@@ -136,3 +136,8 @@ It is a standard ==library for routing== in **React**. It enables the ==navigati
 3. What is ==axios==?
     
     It is a popular library is mainly used to send asynchronous **HTTP** requests to **REST** endpoints
+
+## Related
+
+- [[React]]
+- [[JavaScript]]

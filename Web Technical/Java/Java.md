@@ -227,3 +227,9 @@ System.out.print(currency.format(123456.789))
 // --> 123,456.789
 ```
 
+## Related
+
+- [[Java Learning Plan]]
+- [[Java OOP]]
+- [[Switching JDK version]]
+

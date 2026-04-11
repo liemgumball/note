@@ -1,4 +1,4 @@
-> _One of the main attractions to_ ==**_Node.js_**== _is the_ ==_massive ecosystem_== _of external third-party libraries._ ==**_Node.js_**== _modules are_ ==_libraries_== _or a set of functions you want to include in your application._
+> _One of the main attractions to_ ==**_[[NodeJS|Node.js]]_**== _is the_ ==_massive ecosystem_== _of external third-party libraries._ ==**_Node.js_**== _modules are_ ==_libraries_== _or a set of functions you want to include in your application._
 
 ## `nvm`
 
@@ -100,7 +100,7 @@ Similar to a .`gitignore` file, which specifies which files should ==not be trac
 
 ## Using ==ECMAScript== modules
 
-==**ECMAScript**== is the language specification created to standardize **==JavaScript==**, defined by _ECMAScript International_. ==**ECMAScript**== modules are the official format to package ==**JavaScript**== code for reuse.
+==**ECMAScript**== is the language specification created to standardize **==[[JavaScript]]==**, defined by _ECMAScript International_. ==**ECMAScript**== modules are the official format to package ==**JavaScript**== code for reuse.
 
 ```JavaScript
 import express from 'express'
@@ -129,3 +129,8 @@ There are other ways of indicating that you'd like to treat a module as an ==**E
 	...
 }
 ```
+
+## Related
+
+- [[NodeJS]]
+- [[JavaScript]]

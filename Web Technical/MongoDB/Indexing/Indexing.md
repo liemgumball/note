@@ -4,7 +4,7 @@
 
 > [!important] ==Indexing==
 > 
-> is a data structure technique used to ==locate== and ==quickly access== data in databases to improves database performance by minimizing the number of disc visits required to fulfill a query.
+> is a data structure technique used to ==locate== and ==quickly access== data in [[MongoDB|databases]] to improves database performance by minimizing the number of disc visits required to fulfill a query.
 
 ![[Web Technical/MongoDB/Indexing/attachments/Untitled.png|Untitled.png]]
 
@@ -23,3 +23,7 @@ The ==second column== is the `Data Reference` or `Pointer` which contains a ==se
 > [!info] Indexing in Databases - Set 1 - GeeksforGeeks  
 > A Computer Science portal for geeks.  
 > [https://www.geeksforgeeks.org/indexing-in-databases-set-1/](https://www.geeksforgeeks.org/indexing-in-databases-set-1/)
+
+## Related
+
+- [[MongoDB]]

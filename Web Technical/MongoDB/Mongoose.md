@@ -1555,3 +1555,8 @@ async function run() {
 > [!info] Mongoose v8.2.1: Mongoose  
 > The exports object of the mongoose module is an instance of this class.  
 > [https://mongoosejs.com/docs/api/mongoose.html](https://mongoosejs.com/docs/api/mongoose.html)
+
+## Related
+
+- [[MongoDB]]
+- [[NodeJS]]

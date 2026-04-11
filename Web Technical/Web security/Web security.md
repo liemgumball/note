@@ -67,3 +67,10 @@ It can be leak in many place
 # Session Riding attacks
 
 ![[Screenshot_2024-10-16_at_22.38.29.png]]
+
+## Related
+
+- [[JavaScript]] - Client-side scripting and security considerations
+- [[NodeJS]] - Server-side security
+- [[NestJS]] - Backend framework with built-in security features
+- [[Docker]] - Container security and isolation

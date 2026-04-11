@@ -4,7 +4,7 @@
 
 **Duration**: 6–9 months (2 sessions/week)
 
-**Focus**: Front end Development with HTML, CSS, JavaScript, and React
+**Focus**: Front end Development with HTML, CSS, [[JavaScript]], and [[React]]
 
 ---
 
@@ -77,7 +77,7 @@
 
 ## Phase 3: DOM & Interactivity (Weeks 9–12)
 
-### Week 9: DOM Basics
+### Week 9: [[DOM]] Basics
 
 - What is the DOM?
 - Selecting elements (`getElementById`, `querySelector`)
@@ -172,7 +172,7 @@
 
 ## 🛠 Phase 5: Backend Basics with Node.js + Express (Weeks 21–24)
 
-### Week 21: Intro to Node.js
+### Week 21: Intro to [[NodeJS|Node.js]]
 
 - What is Node.js?
 - Running JS outside the browser
@@ -198,6 +198,16 @@
 - Capstone Project (React + Express):
     - Ideas: Job board, Expense tracker, Recipe app
     - Full CRUD with backend
+
+## Related
+
+- [[JavaScript]]
+- [[React]]
+- [[DOM]]
+- [[NodeJS]]
+- [[Express framework]]
+- [[HTML-CSS training]]
+- [[Shell cmd, Git, HTML, CSS]]
     - Deployed on GitHub + Render/Vercel
 
 ---

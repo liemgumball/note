@@ -2,7 +2,7 @@
 
   
 
-Components often need to change what’s on the screen as a result of an interaction. In React, this kind of component-specific memory is called ==_state_==.
+Components often need to change what’s on the screen as a result of an interaction. In [[React]], this kind of component-specific memory is called ==_state_==.
 
 The component will re-render itself if their _==state==_ changed
 
@@ -52,3 +52,10 @@ items.push({id: 1, name:'1'}); //won't work
 
 setItems([...items, {id:1, name:'1'}]) //create new array and set a copy of it
 ```
+
+## Related
+- [[React]]
+- [[JavaScript]]
+- [[Built-in React Hooks]]
+- [[Managing State]]
+- [[Queueing a Series of State Updates]]

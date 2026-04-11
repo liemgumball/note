@@ -1,4 +1,4 @@
-In ==**React**==, a component is a self-contained, reusable piece of ==**UI**== that encapsulates a specific functionality or view. Components are the building blocks of a React application, and they enable you to break down the ==user interface== into smaller, manageable parts
+In ==**[[React]]**==, a component is a self-contained, reusable piece of ==**UI**== that encapsulates a specific functionality or view. Components are the building blocks of a React application, and they enable you to break down the ==user interface== into smaller, manageable parts
 
   
 
@@ -68,3 +68,8 @@ OK, so we’ve identified what the minimal set of app ==state== is. Next, we nee
 ## **Step 5: Add Inverse Data Flow**
 
 ==**React**== makes this data flow explicit to help you understand how your program works, but it does require a little more typing than traditional ==two-way== data binding.
+
+## Related
+- [[React]]
+- [[State and Lifecycle]]
+- [[Managing State]]

@@ -9,7 +9,7 @@ Edited: 2025-01-11T09:48
 ---
 # Why React?
 
-Why we talk about React? (_this is to explain why we have a topic about React)_
+Why we talk about [[React]]? (_this is to explain why we have a topic about React)_
 
 1. mgm is using React 😊
 2. React is a rock start in web development! 🤩
@@ -88,7 +88,7 @@ The biggest part of the new version in React Compiler, this is the reason why we
 
 ### What does it do?
 
-It’s called “compiler”, so basically it converts your React code into regular JavaScript code 😃.
+It’s called “compiler”, so basically it converts your React code into regular [[JavaScript]] code 😃.
 
 ### But why this is so important?
 
@@ -304,3 +304,10 @@ Better error log
 ![[image 14.png]]
 
 ### Support preloading resources
+
+## Related
+
+- [[React]] - Core React documentation
+- [[React advanced]] - React advanced guides
+- [[JavaScript]] - Language fundamentals
+- [[Built-in React Hooks]] - Hooks reference

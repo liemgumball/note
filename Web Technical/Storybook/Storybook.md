@@ -9,7 +9,7 @@ Edited: 2024-03-05T16:49
 ---
 > [!important] **==Storybook==**
 > 
-> runs alongside your app in ==development mode==. It helps you build ==**UI**== components isolated from the business logic and context of your app.
+> runs alongside your app in ==development mode==. It helps you build ==**UI**== components isolated from the business logic and context of your app. Commonly used with [[React]] and [[JavaScript]] frameworks.
 
 ## Get started
 
@@ -57,3 +57,8 @@ pnpm run storybook
 > [!info] ArgTypes  
 > Storybook is a frontend workshop for building UI components and pages in isolation.  
 > [https://storybook.js.org/docs/react/api/arg-types](https://storybook.js.org/docs/react/api/arg-types)
+
+## Related
+- [[React]]
+- [[JavaScript]]
+- [[TypeScript]]

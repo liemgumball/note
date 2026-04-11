@@ -1,10 +1,10 @@
-A flexible plan for learning Java while working full-time. Estimated duration: **8–12 weeks**
+A flexible plan for learning [[Java]] while working full-time. Estimated duration: **8–12 weeks**
 
 ---
 
 ## 🌱 Phase 1: Core Java & OOP (Weeks 1–3)
 
-**Goal**: Understand Java syntax, data types, control flow, methods, and **OOP** fundamentals.
+**Goal**: Understand Java syntax, data types, control flow, methods, and **[[Java OOP|OOP]]** fundamentals.
 
 ### ⏱ Weekly Time: 8–10 hours
 
@@ -112,5 +112,10 @@ A flexible plan for learning Java while working full-time. Estimated duration: *
 
 ---
 
-> ✅ Keep it flexible, track weekly, and build one real project per phase.
+> Keep it flexible, track weekly, and build one real project per phase.
+
+## Related
+
+- [[Java]]
+- [[Java OOP]]
 

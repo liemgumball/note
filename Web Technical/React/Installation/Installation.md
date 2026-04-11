@@ -1,4 +1,4 @@
-# Create react app
+# Create [[React]] app
 
 https://github.com/facebook/create-react-app
 
@@ -12,9 +12,14 @@ https://github.com/facebook/create-react-app
 
   
 
-> [!important] React is used ro create an interactive websites
+> [!important] [[React]] is used ro create an interactive websites
 > 
 >   
 > Allow to easily create ==**Single Page Apps**== - ==**SPA**==’s for short
 
 ![[Web Technical/React/Installation/attachments/Untitled.png|Untitled.png]]
+
+## Related
+- [[React]]
+- [[JavaScript]]
+- [[Thinking in React]]

@@ -1,3 +1,5 @@
+This note covers [[TypeScript]] function types in depth.
+
 ## **Function Type Expressions**
 
 The simplest way to describe a function is with a ==_function type expression_==. These types are syntactically similar to arrow functions:
@@ -462,3 +464,9 @@ const f3 = function (): void {
   return true;
 };
 ```
+
+## Related
+- [[TypeScript]]
+- [[JavaScript]]
+- [[Narrowing]]
+- [[Object type]]

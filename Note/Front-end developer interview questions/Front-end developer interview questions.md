@@ -107,7 +107,7 @@ The Inline element does not start from a new line ( the `margin` and `padding` m
 
 ### Interview Questions for Experienced
 
-1. **What is JavaScript?**
+1. **What is [[JavaScript]]?**
 2. What is difference between `==` and `===` in **JavaScript**?
     
     The `==` operator checks ==only for the values== of the operands and return true if the values are same.
@@ -119,7 +119,7 @@ The Inline element does not start from a new line ( the `margin` and `padding` m
     3 === "3" // Returns false
     ```
     
-3. What is **DOM?**
+3. What is **[[DOM]]?**
     
     **DOM** stands for ==**Document Object Model**==**,** it is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The **DOM** represents the document ==as== ==**nodes**== and ==**objects**==; that way, programming languages can ==interact with the page.==
     
@@ -195,3 +195,10 @@ The Inline element does not start from a new line ( the `margin` and `padding` m
 10. Describe the concept of **CORS**?
     
     **CORS** stands for ==**Cross-Origin Resource Sharing**==. It is a technique ==used by the browsers== to make our web page more secure. The web browsers use this feature to ==prevent requests== from one domain to another domain.
+
+## Related
+
+- [[JavaScript]]
+- [[React]]
+- [[TypeScript]]
+- [[DOM]]

@@ -1,6 +1,12 @@
 ---
 book: https://drive.google.com/file/d/1qTnNfR-Li8_hO6_bsb0L9c7S59eJykim/view?usp=sharing
 ---
+## Related
+
+- [[HTML-CSS training]]
+- [[DOM]]
+- [[Shell cmd, Git, HTML, CSS]]
+
 ## 📄 HTML Basics – Questions
 
 ### Structure & Syntax

@@ -14,7 +14,7 @@ Edited: 2025-05-10T14:46
 
 ![[Web Technical/DOM/attachments/Untitled.png]]
 
-## With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+## With the object model, [[JavaScript]] gets all the power it needs to create dynamic HTML:
 
 - JavaScript can ==change== all the HTML ==elements== in the page
 - JavaScript can ==change== all the HTML ==attributes== in the page
@@ -771,3 +771,9 @@ div.style.height = '100px';
 div.style.width = '100px';
 div.style.border = '2px solid black';
 ```
+
+## Related
+
+- [[JavaScript]] - Language used to manipulate the DOM
+- [[HTML-CSS training]] - HTML and CSS fundamentals
+- [[React]] - Virtual DOM abstraction over the browser DOM

@@ -1,3 +1,5 @@
+[[TypeScript]] provides several ways to narrow types within conditional blocks.
+
 ## Take this example
 
 ```TypeScript
@@ -342,3 +344,8 @@ function getArea(shape: Shape) {
   }
 }
 ```
+
+## Related
+- [[TypeScript]]
+- [[More on function]]
+- [[Object type]]

@@ -1,4 +1,4 @@
-## In **==JavaScript==**, the fundamental way that we group and pass around data is through objects. In ==**TypeScript**==, we represent those through ==_object types_==.
+## In **==[[JavaScript]]==**, the fundamental way that we group and pass around data is through objects. In ==**[[TypeScript]]**==, we represent those through ==_object types_==.
 
 ```TypeScript
 function greet(person: { name: string; age: number }) {
@@ -295,3 +295,9 @@ function distanceFromOrigin([x, y]: [number, number]) {
  
 distanceFromOrigin(point);
 ```
+
+## Related
+- [[TypeScript]]
+- [[JavaScript]]
+- [[Narrowing]]
+- [[Enums]]

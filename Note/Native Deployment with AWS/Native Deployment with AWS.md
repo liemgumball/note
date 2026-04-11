@@ -10,7 +10,7 @@ tags:
 - Setup your own ssh and connect to your server
 - Install git on ubuntu: [https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-20-04)
 - Clone your source code: `git clone ...`
-- Setup your Nodejs on ubuntu:
+- Setup your [[NodeJS|Nodejs]] on ubuntu:
     - [https://nodejs.org/en/download/package-manager](https://nodejs.org/en/download/package-manager)
     - [https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04)
 - Setup your mysql:
@@ -124,3 +124,8 @@ pm2 start app.js
 ```
 
 And now your app is alive in the detach mode
+
+## Related
+
+- [[NodeJS]]
+- [[Docker]]

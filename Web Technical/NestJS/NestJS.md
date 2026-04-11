@@ -205,3 +205,9 @@ Authentication is one of the most important aspect of developing. As a developer
 It provides a mapping between object in memory (class) with record in a relational database.
 
 This allow to create a **Data Transfer Object (DTO)** that knows how to write objects stored in memory to the database, and also read the record results from **SQL** or another query language.
+
+## Related
+
+- [[NodeJS]]
+- [[TypeScript]]
+- [[Express framework]]

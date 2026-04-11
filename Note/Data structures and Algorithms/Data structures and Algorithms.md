@@ -33,6 +33,8 @@ tags:
 
 ## Algorithms
 
+See also: [[Dynamic programming]]
+
 1. Search Algorithms
     1. Linear search
     2. Binary search

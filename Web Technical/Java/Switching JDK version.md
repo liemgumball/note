@@ -7,7 +7,7 @@ Materials:
 Reviewed: false
 Edited: 2024-07-26T10:33
 ---
-# 1. List all JDK versions
+# 1. List all [[Java|JDK]] versions
 
 ```Bash
 # macOS
@@ -41,3 +41,7 @@ java --version
 # Java(TM) SE Runtime Environment (build 21.0.4+8-LTS-274)
 # Java HotSpot(TM) 64-Bit Server VM (build 21.0.4+8-LTS-274, mixed mode, sharing)
 ```
+
+## Related
+
+- [[Java]]

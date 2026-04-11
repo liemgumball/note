@@ -1,6 +1,6 @@
   
 
-Along with traditional OO hierarchies, another popular way of building up classes from reusable components is to build them by combining simpler partial classes.
+Along with traditional OO hierarchies, another popular way of building up [[Classes]] from reusable components is to build them by combining simpler partial classes.
 
   
 
@@ -47,3 +47,8 @@ const flappySprite = new EightBitSprite("Bird");
 flappySprite.setScale(0.8);
 console.log(flappySprite.scale);
 ```
+
+## Related
+- [[TypeScript]]
+- [[JavaScript]]
+- [[Classes]]

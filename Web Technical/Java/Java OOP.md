@@ -1,4 +1,4 @@
-# The core of Java
+# The core of [[Java]]
 **Object-oriented programming** is about creating objects that contain both data and methods.
 **OOP** has several advantages over procedural programming:
 - **OOP** is faster and easier to execute
@@ -33,3 +33,7 @@ The `this` keyword in **Java** refers to the current object in a method or con
 You can also use `this()` to call another constructor in the same class.
 
 This is useful when you want to provide default values or reuse initialization code instead of repeating it.
+
+## Related
+
+- [[Java]]

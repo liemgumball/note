@@ -69,7 +69,7 @@ https://github.com/liemgumball/html-css-training
     }
     ```
     
-    - **Grid Layout**
+    - **[[Grid CSS|Grid Layout]]**
         
         CSS Grid Layout allows for the straightforward creation of flexible grids. If we consider the earlier floated example, rather than creating our columns with percentages, we could use grid layout and the `fr` unit, which represents a portion of the available space in the container.
         
@@ -363,3 +363,8 @@ https://github.com/liemgumball/html-css-training
 - It is recommended to use `max-width` instead of `width` to avoid fixed width.
 - Use `display: none` for the elements that need to be hidden on each device that you want to hide. And `display: block` on devices that need to be displayed.
 - Use the `!important` option if you need to override ==CSS.==
+
+## Related
+
+- [[Grid CSS]] - CSS Grid layout system
+- [[HTML-CSS training]] - HTML and CSS fundamentals

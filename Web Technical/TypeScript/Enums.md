@@ -1,4 +1,4 @@
-Enums are one of the few features ==**TypeScript**== has which is not a type-level extension of **==JavaScript==**.
+Enums are one of the few features ==**[[TypeScript]]**== has which is not a type-level extension of **==[[JavaScript]]==**.
 
   
 
@@ -278,3 +278,8 @@ EDirection.Up;
 ODirection.Up;
            // (property) Up: 0
 ```
+
+## Related
+- [[TypeScript]]
+- [[JavaScript]]
+- [[Narrowing]]

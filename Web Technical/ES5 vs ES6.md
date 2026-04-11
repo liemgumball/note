@@ -22,7 +22,7 @@ ES6 is the ==sixth== edition of the **ECMAScript. Introduced in 2015**
 
 In ==**ES5**== supports primitive data types that are `**string**`**,** `**number**`**,** `**boolean**`**,** `**null**`**,** and `**undefined**`.
 
-In ==**ES6**==, there are some additions to **==JavaScript==** data types. It introduced a new primitive data type `**symbol**` for supporting unique values.
+In ==**ES6**==, there are some additions to **==[[JavaScript]]==** data types. It introduced a new primitive data type `**symbol**` for supporting unique values.
 
 ## Variables
 
@@ -202,3 +202,8 @@ test1()
   .then((message) => console.log("Success!" + message))
   .catch((message) => console.log("Failed!" + message));
 ```
+
+## Related
+
+- [[JavaScript]] - Core language reference
+- [[TypeScript]] - Typed superset building on ES6+ features

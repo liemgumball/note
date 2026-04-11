@@ -18,3 +18,8 @@ git rm --cached <file_path>
 
 > [!info] Like a deleted status for git
 > Seeing the ==Stop tracking== like creating a `deleted file` change of git for the file with actually delete the file.
+
+## Related
+
+- [[Shell cmd, Git, HTML, CSS]]
+- [[Git begin]]

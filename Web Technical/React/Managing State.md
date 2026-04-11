@@ -4,7 +4,7 @@
 
 ## Reacting to input with _State_
 
-With ==**React**==, we ==won’t== modify the UI from code ==directly==. For example, we won’t write commands like “disable the button”, “enable the button”, “show the success message”, etc. Instead, we will describe the UI you want to see for the ==different visual states== of the component
+With ==**[[React]]**==, we ==won’t== modify the UI from code ==directly==. For example, we won’t write commands like “disable the button”, “enable the button”, “show the success message”, etc. Instead, we will describe the UI you want to see for the ==different visual states== of the component
 
 and then ==trigger the state changes== in response to ==user input==. This is similar to how ==designers== think about ==**UI**==
 
@@ -79,3 +79,9 @@ The ==most important principle== is that state ==shouldn’t== contain ==redunda
     > [!info] Choosing the State Structure – React  
     > The library for web and native user interfaces  
     > [https://react.dev/learn/choosing-the-state-structure#avoid-deeply-nested-state](https://react.dev/learn/choosing-the-state-structure#avoid-deeply-nested-state)
+
+## Related
+- [[React]]
+- [[State and Lifecycle]]
+- [[Thinking in React]]
+- [[Built-in React Hooks]]

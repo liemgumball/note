@@ -42,3 +42,10 @@ When multiple stylesheets are added without `@import` (by using link tags in t
 > [https://www.debugbear.com/blog/avoid-css-import](https://www.debugbear.com/blog/avoid-css-import)  
 
 **Notice!** When we build Web App with Parcel, if we use @import CSS files, it will compine all CSS files into One.
+
+## Related
+
+- [[JavaScript]] - Core web programming language
+- [[Grid CSS]] - CSS Grid layout system
+- [[Responsive web design]] - Responsive design techniques
+- [[DOM]] - Document Object Model manipulation

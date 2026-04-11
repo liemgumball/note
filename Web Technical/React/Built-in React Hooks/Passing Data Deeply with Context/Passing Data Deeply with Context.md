@@ -1,4 +1,4 @@
-Usually, you will pass ==information== from a parent component to a child component ==via props==. But passing props can become ==verbose== and ==inconvenient== if you have to pass them through many components in the middle, or if ==many== components in your app ==need== the ==same information==. **_Context_** lets the parent component make some information available to any component in the tree below it—==no matter how deep==—without passing it explicitly through props.
+Usually, in [[React]] you will pass ==information== from a parent component to a child component ==via props==. But passing props can become ==verbose== and ==inconvenient== if you have to pass them through many components in the middle, or if ==many== components in your app ==need== the ==same information==. **_Context_** lets the parent component make some information available to any component in the tree below it—==no matter how deep==—without passing it explicitly through props.
 
 > [!info] Passing Data Deeply with Context – React  
 > The library for web and native user interfaces  
@@ -102,3 +102,8 @@ Using context in distant children
 ## **Context passes through intermediate components**
 
 You can insert as many components as you like between the component that provides context and the one that uses it. This includes both built-in components like `<div>` and components you might build yourself.
+
+## Related
+- [[React]]
+- [[Built-in React Hooks]]
+- [[Managing State]]
