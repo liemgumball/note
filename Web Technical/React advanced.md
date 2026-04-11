@@ -368,7 +368,7 @@ There are 2 main ways to test ==**React**== components
 > 
 > ==**React**==.  
 > It’s  
-> `==**Vitest**==`
+> ==**Vitest**==
 
   
 
