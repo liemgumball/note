@@ -34,7 +34,7 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "Web Technical/Java/Java.md": "LiCoffee",
-  "Web Technical/Java/Java Learning Plan.md": "📚",
-  "Web Technical/Docker/Docker.md": "🐋"
+  "raw/Web Technical/Java/Java Learning Plan.md": "📚",
+  "raw/Web Technical/Java/Java.md": "LiCoffee",
+  "raw/Web Technical/Docker/Docker.md": "🐋"
 }

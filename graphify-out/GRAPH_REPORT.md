@@ -1,7 +1,8 @@
-# Graph Report - .  (2026-04-11)
+# Graph Report - .  (2026-04-13)
 
 ## Corpus Check
-- Large corpus: 179 files · ~904,144 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
+- 179 files · ~912,679 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 - 424 nodes · 77 edges · 359 communities detected
@@ -22,15 +23,15 @@
 
 ## Surprising Connections (you probably didn't know these)
 - `GitHub Actions Runner VM (Ubuntu)` --semantically_similar_to--> `Kubernetes (K8s)`  [INFERRED] [semantically similar]
-  Excalidraw/github-integration-flow.excalidraw.md → Technical Resource/Tutorial_K8s_Kubeflow_Spark_Streaming_Kafka.pdf
-- `Gumball Watterson Character Image` --semantically_similar_to--> `Gumball Watterson Character Image (AI Resume Reviewer)`  [EXTRACTED] [semantically similar]
-  Note/Example Brainstorm/attachments/gumball.jpeg → Technical Resource/AI resume reviewer/attachments/gumball.jpeg
+  raw/Excalidraw/github-integration-flow.excalidraw.md → raw/Technical Resource/Tutorial_K8s_Kubeflow_Spark_Streaming_Kafka.pdf
 - `Edge DevTools Remote Debugging Screenshot` --conceptually_related_to--> `Node.js Security Practices`  [AMBIGUOUS]
-  Web Technical/NodeJS/attachments/Untitled 1.png → Web Technical/NodeJS/Node.js securing/attachments/Untitled 2.png
+  raw/Web Technical/NodeJS/attachments/Untitled 1.png → raw/Web Technical/NodeJS/Node.js securing/attachments/Untitled 2.png
 - `Git Remotes Diagram (origin/ngoctran)` --semantically_similar_to--> `GitHub Integration Flow (Claude Code + Actions)`  [INFERRED] [semantically similar]
-  Excalidraw/Git begin 2025-10-14 20.52.55.excalidraw.md → Excalidraw/github-integration-flow.excalidraw.md
+  raw/Excalidraw/Git begin 2025-10-14 20.52.55.excalidraw.md → raw/Excalidraw/github-integration-flow.excalidraw.md
 - `npm ETARGET Version Mismatch Error` --conceptually_related_to--> `Node.js Security Practices`  [INFERRED]
-  Web Technical/NodeJS/Node.js securing/attachments/Untitled.png → Web Technical/NodeJS/Node.js securing/attachments/Untitled 2.png
+  raw/Web Technical/NodeJS/Node.js securing/attachments/Untitled.png → raw/Web Technical/NodeJS/Node.js securing/attachments/Untitled 2.png
+- `Node.js Security Practices` --conceptually_related_to--> `Prototype Pollution Vulnerability`  [INFERRED]
+  raw/Web Technical/NodeJS/Node.js securing/attachments/Untitled 2.png → raw/Web Technical/NodeJS/Node.js securing/attachments/Untitled 5.png
 
 ## Hyperedges (group relationships)
 - **Claude Code Hook Lifecycle** — claude_code_pretooluse_hook, claude_code_posttooluse_hook, claude_code_notification_hook, claude_code_stop_hook [EXTRACTED 0.95]
@@ -61,85 +62,85 @@
 
 ## Communities
 
-### Community 0 - "Web Security Fundamentals"
+### Community 0 - "Community 0"
 Cohesion: 0.17
 Nodes (12): Corrective Control, Detective Control, Exploit, Preventive Control, Risk, Threat, Vulnerability, Zero-Day Vulnerability (+4 more)
 
-### Community 1 - "Node.js Security"
+### Community 1 - "Community 1"
 Cohesion: 0.25
 Nodes (8): Input Validation in Express, Node.js Security Practices, Prototype Pollution Vulnerability, Edge DevTools Remote Debugging Screenshot, Express Input Validation TypeError, JSON Prototype Pollution TypeError, npm Audit Clean Install Output, npm ETARGET Version Mismatch Error
 
-### Community 2 - "Git & CI/CD Integration"
+### Community 2 - "Community 2"
 Cohesion: 0.38
 Nodes (7): Claude Code (GitHub Integration), Git Remotes Diagram (origin/ngoctran), Git Remote origin/ngoctran, Git Remote origin2/ngoctran, GitHub Actions, GitHub Integration Flow (Claude Code + Actions), GitHub Actions Runner VM (Ubuntu)
 
-### Community 3 - "CSS Layout & Styling"
+### Community 3 - "Community 3"
 Cohesion: 0.33
 Nodes (6): CSS Background Shorthand Property Example, CSS Fieldset and Legend Styling, CSS Float Layout - Bicycle Article, CSS Form Alignment with Floats, CSS Submit Button Styling Example, CSS Text Input Styling with Background Images
 
-### Community 4 - "Java Compilation Pipeline"
-Cohesion: 0.4
-Nodes (5): Java Byte Code (*.class), Java Compiler, Native Code (MacOS, Linux), Java Source Code (*.java), Java Virtual Machine (JVM)
-
-### Community 5 - "K8s Data Platform Stack"
-Cohesion: 0.6
-Nodes (5): Apache Kafka, Kubeflow, Kubernetes (K8s), Spark Streaming, Tutorial: Kubernetes, Kubeflow, Spark Streaming, Kafka
-
-### Community 6 - "LoopBack Microservices"
+### Community 4 - "Community 4"
 Cohesion: 0.7
 Nodes (5): LoopBack 4 Framework, LoopBack 4 Datasource CLI Setup, LoopBack 4 Model Creation CLI, LoopBack 4 Project Scaffold Output, LoopBack 4 Repository Generation CLI
 
-### Community 7 - "React Setup & Style"
-Cohesion: 0.5
-Nodes (4): Airbnb React/JSX Style Guide, Create React App, React Installation Notes, React Single Page Application (SPA)
+### Community 5 - "Community 5"
+Cohesion: 0.6
+Nodes (5): Apache Kafka, Kubeflow, Kubernetes (K8s), Spark Streaming, Tutorial: Kubernetes, Kubeflow, Spark Streaming, Kafka
 
-### Community 8 - "Cookie Security & CSRF"
+### Community 6 - "Community 6"
+Cohesion: 0.4
+Nodes (5): Java Byte Code (*.class), Java Compiler, Native Code (MacOS, Linux), Java Source Code (*.java), Java Virtual Machine (JVM)
+
+### Community 7 - "Community 7"
 Cohesion: 0.67
 Nodes (4): Cross-Site Request Forgery (CSRF), HttpOnly Cookie Flag, Session Cookie, Web Storage vs Cookies Comparison
 
-### Community 9 - "List Templates"
+### Community 8 - "Community 8"
 Cohesion: 0.5
 Nodes (4): List Template - Page 1, List Template - Page 2, List Template - Page 3, List Template - Untitled
 
-### Community 10 - "React Hooks & State"
-Cohesion: 0.67
-Nodes (3): React useState vs let Variable Meme, React useEffect Data Fetching Pattern with useState, Web Frameworks and Technologies Usage Survey Chart
+### Community 9 - "Community 9"
+Cohesion: 0.5
+Nodes (4): Airbnb React/JSX Style Guide, Create React App, React Installation Notes, React Single Page Application (SPA)
 
-### Community 11 - "React 19 Ref Evolution"
-Cohesion: 1.0
-Nodes (3): Meme About Discarding forwardRef in React 19, React useRef with forwardRef Pattern, React 19 Ref as Prop Pattern (replaces forwardRef)
-
-### Community 12 - "React Context & Data Flow"
-Cohesion: 1.0
-Nodes (3): React Context - Passing Data Down the Tree Diagram, React Context - Prop Drilling via Broadcasting (Parent to Children), React 19 createContext and useContext Code Example
-
-### Community 13 - "Java Architecture Diagrams"
+### Community 10 - "Community 10"
 Cohesion: 0.67
 Nodes (3): Java Compilation Flow (Source to Bytecode), Java JVM Execution Flow (Bytecode to Native), Java Memory Model (RAM, References)
 
-### Community 14 - "URL & Same-Origin Policy"
+### Community 11 - "Community 11"
+Cohesion: 1.0
+Nodes (3): React Context - Passing Data Down the Tree Diagram, React Context - Prop Drilling via Broadcasting (Parent to Children), React 19 createContext and useContext Code Example
+
+### Community 12 - "Community 12"
+Cohesion: 0.67
+Nodes (3): React useState vs let Variable Meme, React useEffect Data Fetching Pattern with useState, Web Frameworks and Technologies Usage Survey Chart
+
+### Community 13 - "Community 13"
 Cohesion: 0.67
 Nodes (3): Same-Origin Policy, URL Origin (Scheme + Domain + Port), URL Structure Anatomy Diagram
 
-### Community 15 - "Gumball Assets"
+### Community 14 - "Community 14"
 Cohesion: 1.0
-Nodes (2): Gumball Watterson Character Image, Gumball Watterson Character Image (AI Resume Reviewer)
+Nodes (3): Meme About Discarding forwardRef in React 19, React useRef with forwardRef Pattern, React 19 Ref as Prop Pattern (replaces forwardRef)
 
-### Community 16 - "Web Layout Planning"
+### Community 15 - "Community 15"
 Cohesion: 1.0
-Nodes (2): Website Sitemap Tree Structure, E-commerce Page Wireframe Layout
+Nodes (2): HTML5 Audio Element Code Example, HTML5 Multiple Video Sources Example
 
-### Community 17 - "React 19 Actions & use()"
+### Community 16 - "Community 16"
 Cohesion: 1.0
 Nodes (2): React 19 React.use Hook with Promise and Conditional Call, React 19 Before Actions Pattern - Manual Pending/Error State
 
-### Community 18 - "Thinking in React"
+### Community 17 - "Community 17"
 Cohesion: 1.0
 Nodes (2): Thinking in React - Component Hierarchy Diagram (App.js tree), Thinking in React - UI Decomposition with Numbered Components
 
-### Community 19 - "HTML5 Media Elements"
+### Community 18 - "Community 18"
 Cohesion: 1.0
-Nodes (2): HTML5 Audio Element Code Example, HTML5 Multiple Video Sources Example
+Nodes (2): Website Sitemap Tree Structure, E-commerce Page Wireframe Layout
+
+### Community 19 - "Community 19"
+Cohesion: 1.0
+Nodes (2): Gumball Watterson Character Image, Gumball Watterson Character Image (AI Resume Reviewer)
 
 ### Community 20 - "Community 20"
 Cohesion: 1.0
@@ -1499,20 +1500,20 @@ Nodes (1): DOM Tree Structure Diagram (Document, html, head, body)
 
 ## Ambiguous Edges - Review These
 - `Edge DevTools Remote Debugging Screenshot` → `Node.js Security Practices`  [AMBIGUOUS]
-  Web Technical/NodeJS/attachments/Untitled 1.png · relation: conceptually_related_to
+  raw/Web Technical/NodeJS/attachments/Untitled 1.png · relation: conceptually_related_to
 
 ## Knowledge Gaps
 - **380 isolated node(s):** `Personal Notes Workspace`, `Claude Code in Action Course`, `Claude Code Planning Mode`, `Claude Code Thinking Mode`, `Rewinding Conversations` (+375 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Gumball Assets`** (2 nodes): `Gumball Watterson Character Image`, `Gumball Watterson Character Image (AI Resume Reviewer)`
+- **Thin community `Community 15`** (2 nodes): `HTML5 Audio Element Code Example`, `HTML5 Multiple Video Sources Example`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Web Layout Planning`** (2 nodes): `Website Sitemap Tree Structure`, `E-commerce Page Wireframe Layout`
+- **Thin community `Community 16`** (2 nodes): `React 19 React.use Hook with Promise and Conditional Call`, `React 19 Before Actions Pattern - Manual Pending/Error State`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `React 19 Actions & use()`** (2 nodes): `React 19 React.use Hook with Promise and Conditional Call`, `React 19 Before Actions Pattern - Manual Pending/Error State`
+- **Thin community `Community 17`** (2 nodes): `Thinking in React - Component Hierarchy Diagram (App.js tree)`, `Thinking in React - UI Decomposition with Numbered Components`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Thinking in React`** (2 nodes): `Thinking in React - Component Hierarchy Diagram (App.js tree)`, `Thinking in React - UI Decomposition with Numbered Components`
+- **Thin community `Community 18`** (2 nodes): `Website Sitemap Tree Structure`, `E-commerce Page Wireframe Layout`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `HTML5 Media Elements`** (2 nodes): `HTML5 Audio Element Code Example`, `HTML5 Multiple Video Sources Example`
+- **Thin community `Community 19`** (2 nodes): `Gumball Watterson Character Image`, `Gumball Watterson Character Image (AI Resume Reviewer)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 20`** (1 nodes): `Personal Notes Workspace`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -2198,9 +2199,9 @@ _Questions this graph is uniquely positioned to answer:_
 
 - **What is the exact relationship between `Edge DevTools Remote Debugging Screenshot` and `Node.js Security Practices`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `Sensitive Data in HTTP Request Flow` connect `Web Security Fundamentals` to `Cookie Security & CSRF`?**
+- **Why does `Sensitive Data in HTTP Request Flow` connect `Community 0` to `Community 7`?**
   _High betweenness centrality (0.000) - this node is a cross-community bridge._
-- **Are the 4 inferred relationships involving `Node.js Security Practices` (e.g. with `npm Audit Clean Install Output` and `Prototype Pollution Vulnerability`) actually correct?**
+- **Are the 4 inferred relationships involving `Node.js Security Practices` (e.g. with `npm Audit Clean Install Output` and `npm ETARGET Version Mismatch Error`) actually correct?**
   _`Node.js Security Practices` has 4 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Personal Notes Workspace`, `Claude Code in Action Course`, `Claude Code Planning Mode` to the rest of the system?**
   _380 weakly-connected nodes found - possible documentation gaps or missing edges._
