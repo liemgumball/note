@@ -9,3 +9,8 @@
 - **component** — Each release of Rust includes several “components”, some of which are required (like `rustc`) and some that are optional (like [`clippy`](https://github.com/rust-lang/rust-clippy)).
 - **proxy** — A wrapper for a common Rust component (like `rustc`), built to forward CLI invocations to the active Rust toolchain.
 - **profile** — Defines a grouping of components.
+----
+## Components
+The `rustup component` command is used to manage the installed components.
+## Proxies
+`rustup` provides a number of wrappers for common Rust tools. These are called _proxies_ and represent commands which are provided by the various components.
