@@ -3,7 +3,7 @@ Link: "[Claude Code in Action](https://anthropic.skilljar.com/claude-code-in-act
 ---
 ## Overview
 
-**Claude Code in Action** is an official Anthropic course that teaches you how to use Claude Code effectively for real-world software development tasks. The course covers how to leverage Claude Code's agentic capabilities — from writing and editing code to navigating codebases, running commands, and managing complex workflows directly from the terminal.
+**Claude Code in Action** is an official *Anthropic* course that teaches you how to use Claude Code effectively for real-world software development tasks. The course covers how to leverage Claude Code's agentic capabilities — from writing and editing code to navigating codebases, running commands, and managing complex workflows directly from the terminal.
 
 **What you'll learn:**
 - How to get started with Claude Code
