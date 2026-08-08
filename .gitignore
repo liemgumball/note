@@ -19,3 +19,9 @@ Icon?
 
 /.obsidian/workspace.json
 cache
+
+# MkDocs build output
+/site/
+
+# venv
+.venv/
