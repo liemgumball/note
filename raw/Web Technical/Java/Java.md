@@ -41,8 +41,7 @@ ls .
 # --> Main.class  HelloWorld.java
 ```
 # Java Runtime Environment "JRE"
-
-![[Java 2025-10-12 13.09.27.excalidraw|800]]
+![[Java 2025-10-12 13.09.27.excalidraw]]
 ```bash
 pwd
 # --> /
@@ -51,6 +50,8 @@ java learning.basic.HelloWorld
 # --> Hello world!
 
 ```
+
+![[Pasted image 20260820233739.png]]
 # Basic literals
 Regardless of its complexity, a program always performs operations on numbers, strings, and other values. These values are called ==**literals**==.
 ![[Pasted image 20250628104102.png#center|400]]
